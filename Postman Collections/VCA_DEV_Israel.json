@@ -724,7 +724,7 @@
           }
         ],
         "url": {
-          "raw": "{{instance_url}}/services/apexrest/retail/config?test=test",
+          "raw": "{{instance_url}}/services/apexrest/retail/config?test=test&test2=test2",
           "host": [
             "{{instance_url}}"
           ],
@@ -737,7 +737,11 @@
           "query": [
             {
               "key": "test",
-              "value": "test",
+              "value": "test"
+            },
+            {
+              "key": "test2",
+              "value": "test2",
               "type": "text"
             }
           ]
