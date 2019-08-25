@@ -1428,9 +1428,9 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"objectName\": \"Note__c\",\n    \"items\": [\n        {\n        \t\"client\":\"0011l00000EiGxlAAF\",\n            \"title\": \"test title\"\n        }\n    ]\n}"
+          "raw": "{\n    \"items\": [\n        {\n            \"ownerId\": \"0052p000008MZmN\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"giftImage\": null,\n            \"taskType\": null,\n            \"createdById\": null,\n            \"createdBySM\": null,\n            \"desc\": \"\u05e9\u05d3\u05db\u05d3\u05e9\u05db\",\n            \"subject\": \"\u05e7\u05d3\u05d088\",\n            \"allDayEvent\": 0,\n            \"id\": null,\n            \"activityDate\": \"2019-08-25T15:45:23.148+0300\",\n            \"ownerFirstName\": null,\n            \"activityType\": \"Task\",\n            \"ownerLastName\": null,\n            \"status\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"isPinned\": 0,\n            \"isReminderSet\": 0,\n            \"outreachType\": null,\n            \"gift\": null,\n            \"location\": null,\n            \"reminderLabel\": null,\n            \"reminder\": null,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"store\": null\n        }\n    ],\n    \"objectName\": \"Task\"\n}"
         },
-        "url": "{{instance_url}}/services/apexrest/retail/notes"
+        "url": "{{instance_url}}/services/apexrest/retail/activities"
       },
       "response": []
     },
