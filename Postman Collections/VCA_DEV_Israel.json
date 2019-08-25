@@ -695,6 +695,18 @@
     },
     {
       "name": "Get Config Success Example",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "127ff374-15cb-4a8c-93b2-5608820f734b",
+            "exec": [
+              "//test"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "_postman_id": "13ececd3-4e92-45d0-b2d2-7633a4d53c86",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -711,7 +723,25 @@
             "value": "application/json"
           }
         ],
-        "url": "{{instance_url}}/services/apexrest/retail/config"
+        "url": {
+          "raw": "{{instance_url}}/services/apexrest/retail/config?test=test",
+          "host": [
+            "{{instance_url}}"
+          ],
+          "path": [
+            "services",
+            "apexrest",
+            "retail",
+            "config"
+          ],
+          "query": [
+            {
+              "key": "test",
+              "value": "test",
+              "type": "text"
+            }
+          ]
+        }
       },
       "response": [
         {
