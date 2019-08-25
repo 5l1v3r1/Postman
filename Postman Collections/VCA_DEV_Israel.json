@@ -15,7 +15,8 @@
             "exec": [
               "var jsonData = JSON.parse(responseBody);",
               "postman.setEnvironmentVariable(\"access_token\", jsonData.access_token)",
-              "postman.setEnvironmentVariable(\"instance_url\", jsonData.instance_url)"
+              "postman.setEnvironmentVariable(\"instance_url\", jsonData.instance_url)",
+              "postman.setEnvironmentVariable(\"user_id\", jsonData.id.split('/')[jsonData.id.split('/').length - 1]);"
             ],
             "type": "text/javascript"
           }
@@ -39,7 +40,7 @@
         "method": "POST",
         "header": [],
         "url": {
-          "raw": "https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id={{app_client_id}}&client_secret={{app_client_secret}}&username={{username}}&password={{password}}",
+          "raw": "https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id={{app_client_id}}&client_secret={{app_client_secret}}&username={{username}}&password={{password}}&test=paream",
           "protocol": "https",
           "host": [
             "test",
@@ -71,6 +72,11 @@
             {
               "key": "password",
               "value": "{{password}}"
+            },
+            {
+              "key": "test",
+              "value": "paream",
+              "type": "text"
             }
           ]
         }
@@ -1561,38 +1567,96 @@
             "value": "application/json"
           }
         ],
-        "url": {
-          "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"0051t000001wwUfAAI\"]&period=y&getUpt=true&myStore=true",
-          "host": [
-            "{{instance_url}}"
-          ],
-          "path": [
-            "services",
-            "apexrest",
-            "retail",
-            "dashboard"
-          ],
-          "query": [
-            {
-              "key": "userIds",
-              "value": "[\"0051t000001wwUfAAI\"]"
-            },
-            {
-              "key": "period",
-              "value": "y"
-            },
-            {
-              "key": "getUpt",
-              "value": "true"
-            },
-            {
-              "key": "myStore",
-              "value": "true"
-            }
-          ]
-        }
+        "url": "{{instance_url}}/services/apexrest/retail/clientList"
       },
-      "response": []
+      "response": [
+        {
+          "id": "88cba40c-2c1b-4176-b8f2-54b10cc50b97",
+          "name": "Get Client List Success Example",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{instance_url}}/services/apexrest/retail/clientList"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 25 Aug 2019 12:47:52 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536002; includeSubDomains"
+            },
+            {
+              "key": "Public-Key-Pins-Report-Only",
+              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "Expect-CT",
+              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Robots-Tag",
+              "value": "none"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-netfree--content--encoding--remove",
+              "value": "gzip"
+            },
+            {
+              "key": "x-netfree--transfer--encoding--remove",
+              "value": "chunked"
+            },
+            {
+              "key": "x-netfree-careful-content-charset",
+              "value": "utf8"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"documents\": {\n        \"a044E00000D1ux1QAB\": {\n            \"parentId\": \"a044E00000D1ux1QAB\",\n            \"docId\": \"0684E000000Tfn8QAC\",\n            \"docTitle\": \"bitmap@2x\",\n            \"docExtension\": \"png\"\n        },\n        \"a044E00000D1uwwQAB\": {\n            \"parentId\": \"a044E00000D1uwwQAB\",\n            \"docId\": \"0684E000000Tfn3QAC\",\n            \"docTitle\": \"bitmap@2x\",\n            \"docExtension\": \"png\"\n        },\n        \"a044E00000D1uwsQAB\": {\n            \"parentId\": \"a044E00000D1uwsQAB\",\n            \"docId\": \"0684E000000QzaYQAS\",\n            \"docTitle\": \"anniversary@2x\",\n            \"docExtension\": \"png\"\n        },\n        \"a044E00000D1uwrQAB\": {\n            \"parentId\": \"a044E00000D1uwrQAB\",\n            \"docId\": \"0684E000000QvCfQAK\",\n            \"docTitle\": \"anniversary\",\n            \"docExtension\": \"png\"\n        },\n        \"a044E00000D1uwcQAB\": {\n            \"parentId\": \"a044E00000D1uwcQAB\",\n            \"docId\": \"0684E000000TcmYQAS\",\n            \"docTitle\": \"bitmap@2x\",\n            \"docExtension\": \"png\"\n        },\n        \"a044E00000D1uWMQAZ\": {\n            \"parentId\": \"a044E00000D1uWMQAZ\",\n            \"docId\": \"0684E000000RExbQAG\",\n            \"docTitle\": \"client list\",\n            \"docExtension\": \"png\"\n        }\n    },\n    \"clientLists\": [\n        {\n            \"type\": null,\n            \"position\": 6,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"TOP 200\",\n            \"listDescription\": \"My Top 200 Clients\",\n            \"isSpecial\": false,\n            \"id\": \"a044E00000D1ux1QAB\",\n            \"displayType\": null,\n            \"createdDate\": \"2019-05-16\",\n            \"clientIds\": [\n                \"0014E000013rN2bQAE\",\n                \"0014E000011kJ0pQAE\",\n                \"0014E000011kJ17QAE\",\n                \"0014E000011kJ0kQAE\",\n                \"0014E000011kJ0MQAU\",\n                \"0014E000011kJ19QAE\",\n                \"0014E000011kJ15QAE\",\n                \"0014E000011kJ1EQAU\",\n                \"0014E000011kJ1RQAU\",\n                \"0014E000011kJ4eQAE\",\n                \"0014E000011kJ1NQAU\",\n                \"0014E000011kJ4fQAE\",\n                \"0014E000011kJ4cQAE\",\n                \"0014E000011kJ1PQAU\",\n                \"0014E000011kJ1GQAU\",\n                \"0014E000011kJ14QAE\",\n                \"0014E000011kJ0SQAU\",\n                \"0014E000011kJ18QAE\",\n                \"0014E000011kJ4dQAE\",\n                \"0014E000011kJ07QAE\",\n                \"0014E000011kJ1KQAU\",\n                \"0014E000011kJ1QQAU\",\n                \"0014E000011kJ0oQAE\",\n                \"0014E000011kJ12QAE\",\n                \"0014E000011kJ1TQAU\",\n                \"0014E000011kJ0iQAE\",\n                \"0014E000011kJ0LQAU\",\n                \"0014E000011kJ0hQAE\",\n                \"0014E000011kJ0cQAE\",\n                \"0014E000011kJ34QAE\",\n                \"0014E000011kJ0HQAU\",\n                \"0014E000011kJ0NQAU\",\n                \"0014E000011kJ1VQAU\",\n                \"0014E000011kJ10QAE\",\n                \"0014E000011kJ4bQAE\",\n                \"0014E000011kJ08QAE\",\n                \"0014E000011kJ0tQAE\",\n                \"0014E000011kJ13QAE\",\n                \"0014E000011kJ0QQAU\",\n                \"0014E000011kJ38QAE\",\n                \"0014E000011kJ0eQAE\",\n                \"0014E000011kJ0UQAU\",\n                \"0014E000011kJ0WQAU\",\n                \"0014E000011kJ1CQAU\",\n                \"0014E000011kJ0lQAE\",\n                \"0014E000011kJ11QAE\",\n                \"0014E000011kJ0gQAE\",\n                \"0014E000011kJ1DQAU\",\n                \"0014E000011kJ37QAE\",\n                \"0014E000011kJ0wQAE\",\n                \"0014E000011kJ0DQAU\",\n                \"0014E000011kJ0XQAU\",\n                \"0014E000011kJ0YQAU\",\n                \"0014E000011kJ0TQAU\",\n                \"0014E000011kJ0sQAE\",\n                \"0014E000011kJ0ZQAU\",\n                \"0014E000011kJ1UQAU\",\n                \"0014E000011kJ1WQAU\",\n                \"0014E000011kJ09QAE\",\n                \"0014E000011kJ0mQAE\",\n                \"0014E000011kJ35QAE\",\n                \"0014E000011kJ0xQAE\",\n                \"0014E000011kJ0dQAE\",\n                \"0014E000011kJ0BQAU\",\n                \"0014E000011kJ0yQAE\",\n                \"0014E000011kJ0rQAE\",\n                \"0014E000011kJ0uQAE\",\n                \"0014E000011kJ0FQAU\",\n                \"0014E000011kJ0KQAU\",\n                \"0014E000011kJ0IQAU\",\n                \"0014E000011kJ0CQAU\",\n                \"0014E000011kJ36QAE\",\n                \"0014E000011kJ0JQAU\",\n                \"0014E000011kJ0jQAE\",\n                \"0014E000011kJ0EQAU\",\n                \"0014E000011kJ0AQAU\",\n                \"0014E000011kJ0zQAE\",\n                \"0014E000011kJ0vQAE\",\n                \"0014E000011kJ1IQAU\",\n                \"0014E000011kJ1HQAU\",\n                \"0014E000011kJ16QAE\",\n                \"0014E000011kJ0PQAU\",\n                \"0014E000011kJ1JQAU\",\n                \"0014E000011kJ0bQAE\",\n                \"0014E000011kJ1FQAU\",\n                \"0014E000011kJ1OQAU\",\n                \"0014E000011kJ05QAE\",\n                \"0014E000011kJ0GQAU\",\n                \"0014E000011kJ0OQAU\",\n                \"0014E000011kJ0RQAU\",\n                \"0014E000011kJ0VQAU\",\n                \"0014E000011kJ0aQAE\",\n                \"0014E000011kJ0fQAE\",\n                \"0014E000011kJ0nQAE\",\n                \"0014E000011kJ0qQAE\",\n                \"0014E000011kJ1AQAU\",\n                \"0014E000011kJ1LQAU\",\n                \"0014E000011kJ1MQAU\"\n            ],\n            \"ascendant\": false\n        },\n        {\n            \"type\": null,\n            \"position\": 1,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"WELCOME\",\n            \"listDescription\": \"My Welcome Clients\",\n            \"isSpecial\": true,\n            \"id\": \"a044E00000D1uWMQAZ\",\n            \"displayType\": \"firstPurchase\",\n            \"createdDate\": \"2019-05-15\",\n            \"clientIds\": [],\n            \"ascendant\": false\n        },\n        {\n            \"type\": null,\n            \"position\": 5,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"STAR CLIENTS\",\n            \"listDescription\": \"All The Star Clients\",\n            \"isSpecial\": false,\n            \"id\": \"a044E00000D1uwwQAB\",\n            \"displayType\": null,\n            \"createdDate\": \"2019-05-16\",\n            \"clientIds\": [\n                \"0014E000011kJ0MQAU\",\n                \"0014E000011kJ0kQAE\",\n                \"0014E000011kJ0pQAE\",\n                \"0014E000011kJ17QAE\",\n                \"0014E000011kJ19QAE\",\n                \"0014E000011kJ1EQAU\",\n                \"0014E000011kJ1NQAU\",\n                \"0014E000011kJ1RQAU\",\n                \"0014E000011kJ1TQAU\"\n            ],\n            \"ascendant\": false\n        },\n        {\n            \"type\": null,\n            \"position\": 2,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"BIRTHDAYS\",\n            \"listDescription\": \"Birthdays to wish : 1 month prior his birthday & 2 days after\",\n            \"isSpecial\": true,\n            \"id\": \"a044E00000D1uwcQAB\",\n            \"displayType\": \"birthday\",\n            \"createdDate\": \"2019-05-16\",\n            \"clientIds\": [\n                \"0014E000011kJ0DQAU\",\n                \"0014E000011kJ0wQAE\",\n                \"0014E000011kJ0zQAE\",\n                \"0014E000011kJ19QAE\",\n                \"0014E000011kJ4eQAE\",\n                \"0014E000011kJ4fQAE\"\n            ],\n            \"ascendant\": false\n        },\n        {\n            \"type\": null,\n            \"position\": 3,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"THANK YOU\",\n            \"listDescription\": \"Client who bought products in the last 4 weeks\",\n            \"isSpecial\": true,\n            \"id\": \"a044E00000D1uwsQAB\",\n            \"displayType\": null,\n            \"createdDate\": \"2019-05-16\",\n            \"clientIds\": [],\n            \"ascendant\": false\n        },\n        {\n            \"type\": null,\n            \"position\": 4,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"PURCHASE ANNIVERSARY\",\n            \"listDescription\": \"Client without any transaction for the past 12 months.\",\n            \"isSpecial\": true,\n            \"id\": \"a044E00000D1uwrQAB\",\n            \"displayType\": null,\n            \"createdDate\": \"2019-05-16\",\n            \"clientIds\": [\n                \"0014E000011kJ07QAE\",\n                \"0014E000011kJ0IQAU\",\n                \"0014E000011kJ0iQAE\",\n                \"0014E000011kJ0rQAE\",\n                \"0014E000011kJ18QAE\",\n                \"0014E000011kJ36QAE\",\n                \"0014E000011kJ37QAE\"\n            ],\n            \"ascendant\": false\n        }\n    ]\n}"
+        }
+      ]
     }
   ],
   "event": [
