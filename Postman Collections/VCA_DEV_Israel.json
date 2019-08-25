@@ -40,7 +40,7 @@
         "method": "POST",
         "header": [],
         "url": {
-          "raw": "https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id={{app_client_id}}&client_secret={{app_client_secret}}&username={{username}}&password={{password}}&test=paream",
+          "raw": "https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id={{app_client_id}}&client_secret={{app_client_secret}}&username={{username}}&password={{password}}",
           "protocol": "https",
           "host": [
             "test",
@@ -76,7 +76,7 @@
             {
               "key": "test",
               "value": "paream",
-              "type": "text"
+              "disabled": true
             }
           ]
         }
