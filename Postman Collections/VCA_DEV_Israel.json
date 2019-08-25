@@ -701,7 +701,8 @@
           "script": {
             "id": "127ff374-15cb-4a8c-93b2-5608820f734b",
             "exec": [
-              "//test"
+              "//test",
+              "//12445"
             ],
             "type": "text/javascript"
           }
@@ -741,8 +742,7 @@
             },
             {
               "key": "test2",
-              "value": "test2",
-              "type": "text"
+              "value": "test2"
             }
           ]
         }
