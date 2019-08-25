@@ -1282,7 +1282,7 @@
           }
         ],
         "url": {
-          "raw": "{{instance_url}}/services/apexrest/retail/activities?id=00T1l000006KxOjEAK&objectName=Task",
+          "raw": "{{instance_url}}/services/apexrest/retail/activities?id=00T4E00000DSsdDUAT&objectName=Task",
           "host": [
             "{{instance_url}}"
           ],
@@ -1295,7 +1295,7 @@
           "query": [
             {
               "key": "id",
-              "value": "00T1l000006KxOjEAK"
+              "value": "00T4E00000DSsdDUAT"
             },
             {
               "key": "objectName",
@@ -1304,7 +1304,103 @@
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "id": "7e8044e7-cb3c-4466-83e6-3fd5ad44e73c",
+          "name": "Delete Activities Success Example",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{instance_url}}/services/apexrest/retail/activities?id=00T4E00000DSsdDUAT&objectName=Task",
+              "host": [
+                "{{instance_url}}"
+              ],
+              "path": [
+                "services",
+                "apexrest",
+                "retail",
+                "activities"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "00T4E00000DSsdDUAT"
+                },
+                {
+                  "key": "objectName",
+                  "value": "Task"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 25 Aug 2019 12:41:30 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536002; includeSubDomains"
+            },
+            {
+              "key": "Public-Key-Pins-Report-Only",
+              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "Expect-CT",
+              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Robots-Tag",
+              "value": "none"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "x-netfree-careful-content-charset",
+              "value": "utf8"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "true"
+        }
+      ]
     },
     {
       "name": "Add Activity",
