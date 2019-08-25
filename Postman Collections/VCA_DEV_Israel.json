@@ -694,7 +694,7 @@
       ]
     },
     {
-      "name": "Get Config Success Example",
+      "name": "Get Config",
       "event": [
         {
           "listen": "prerequest",
