@@ -1,0 +1,1127 @@
+{
+  "info": {
+    "_postman_id": "fe09fe12-e8c7-4910-83b2-a824c7647fb3",
+    "name": "VCA",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "ce6e3261-b654-463e-ac25-dfff273b106f",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "postman.setEnvironmentVariable(\"access_token\", jsonData.access_token)",
+              "postman.setEnvironmentVariable(\"instance_url\", jsonData.instance_url)"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "3bf202f6-1176-4ba7-ba43-792991f83a31",
+            "exec": [
+              "//abc"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "8c5e05a7-e33f-4d21-8317-6426867b1dde",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://test.salesforce.com/services/oauth2/token?grant_type=password&client_id={{app_client_id}}&client_secret={{app_client_secret}}&username={{username}}&password={{password}}",
+          "protocol": "https",
+          "host": [
+            "test",
+            "salesforce",
+            "com"
+          ],
+          "path": [
+            "services",
+            "oauth2",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            },
+            {
+              "key": "client_id",
+              "value": "{{app_client_id}}"
+            },
+            {
+              "key": "client_secret",
+              "value": "{{app_client_secret}}"
+            },
+            {
+              "key": "username",
+              "value": "{{username}}"
+            },
+            {
+              "key": "password",
+              "value": "{{password}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Note",
+      "_postman_id": "f0913a0a-a7d5-4325-aef2-eefe5716bfe8",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"objectName\": \"Note__c\",\n    \"items\": [\n        {\n            \"client\": \"0014E000011kJ0cQAE\",\n            \"private\": true,\n            \"description\": \"Test Add Note\"\n        }\n    ]\n}"
+        },
+        "url": "{{instance_url}}/services/apexrest/retail/notes"
+      },
+      "response": [
+        {
+          "id": "5ee4d0d6-2331-4960-a6fd-c3918e18d445",
+          "name": "Add Note Success Example",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"objectName\": \"Note__c\",\n    \"items\": [\n        {\n            \"client\": \"0014E000011kJ0cQAE\",\n            \"private\": true,\n            \"description\": \"Test Add Note\"\n        }\n    ]\n}"
+            },
+            "url": "{{instance_url}}/services/apexrest/retail/notes"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 25 Aug 2019 11:27:33 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536002; includeSubDomains"
+            },
+            {
+              "key": "Public-Key-Pins-Report-Only",
+              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "Expect-CT",
+              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Robots-Tag",
+              "value": "none"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-netfree--content--encoding--remove",
+              "value": "gzip"
+            },
+            {
+              "key": "x-netfree--transfer--encoding--remove",
+              "value": "chunked"
+            },
+            {
+              "key": "x-netfree-careful-content-charset",
+              "value": "utf8"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"data\": [\n        {\n            \"CreatedById\": \"0052p000008MZmNAAW\",\n            \"title\": \"N-0066\",\n            \"client\": \"0014E000011kJ0cQAE\",\n            \"description\": \"Test Add Note\",\n            \"date\": \"2019-08-25T11:27:33.000Z\",\n            \"id\": \"a024E000005RskbQAC\"\n        }\n    ],\n    \"text\": \"Success\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete Note",
+      "_postman_id": "5d5eb6d6-c335-43f8-b8ce-d7939ad68b78",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{instance_url}}/services/apexrest/retail/notes?id=a024E000005RskbQAC",
+          "host": [
+            "{{instance_url}}"
+          ],
+          "path": [
+            "services",
+            "apexrest",
+            "retail",
+            "notes"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "a024E000005RskbQAC"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "edb25701-3141-4606-83ff-95c1b9141700",
+          "name": "Delete Note Success Example",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{instance_url}}/services/apexrest/retail/notes?id=a024E000005RskbQAC",
+              "host": [
+                "{{instance_url}}"
+              ],
+              "path": [
+                "services",
+                "apexrest",
+                "retail",
+                "notes"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "a024E000005RskbQAC"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 25 Aug 2019 11:30:18 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536002; includeSubDomains"
+            },
+            {
+              "key": "Public-Key-Pins-Report-Only",
+              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "Expect-CT",
+              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Robots-Tag",
+              "value": "none"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "x-netfree-careful-content-charset",
+              "value": "utf8"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "true"
+        }
+      ]
+    },
+    {
+      "name": "Get ClientDetails",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "05404a3e-ccf9-4609-a1d6-bade1bbd623f",
+            "exec": [
+              "//var array = [\"0010D00000EppGsQAJ\", 2, 3, 4];",
+              "//pm.environment.set(\"array\", JSON.stringify(array, null, 2));",
+              "// test 123",
+              "",
+              "// pm.environment.set(\"client_id\", \"0014E000011kJ0cQAE\");"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "c60232c2-218a-437b-b187-a415bd29f212",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "10d66664-b7a0-439e-9ee0-95c309b0f18f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{instance_url}}/services/apexrest/retail/clientDetails?=&clientId={{client_id}}",
+          "host": [
+            "{{instance_url}}"
+          ],
+          "path": [
+            "services",
+            "apexrest",
+            "retail",
+            "clientDetails"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": ""
+            },
+            {
+              "key": "clientId",
+              "value": "{{client_id}}"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "1647f58d-d142-46e2-8eee-4e22546366be",
+          "name": "Get ClientDetails Success Example",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{instance_url}}/services/apexrest/retail/clientDetails?=&clientId={{client_id}}",
+              "host": [
+                "{{instance_url}}"
+              ],
+              "path": [
+                "services",
+                "apexrest",
+                "retail",
+                "clientDetails"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": ""
+                },
+                {
+                  "key": "clientId",
+                  "value": "{{client_id}}"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 25 Aug 2019 11:47:37 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536002; includeSubDomains"
+            },
+            {
+              "key": "Public-Key-Pins-Report-Only",
+              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "Expect-CT",
+              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Robots-Tag",
+              "value": "none"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-netfree--content--encoding--remove",
+              "value": "gzip"
+            },
+            {
+              "key": "x-netfree--transfer--encoding--remove",
+              "value": "chunked"
+            },
+            {
+              "key": "x-netfree-careful-content-charset",
+              "value": "utf8"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"wishlists\": [],\n    \"notes\": [],\n    \"timelineItems\": [\n        {\n            \"isPinned\": false,\n            \"createdDate\": \"2019-08-22T15:24:43.000Z\",\n            \"clientLastName\": \"Hr\",\n            \"id\": \"00T4E00000DSxdOUAT\",\n            \"activityDate\": \"2019-08-22\",\n            \"ownerLastName\": \"VCA\",\n            \"outreachType\": \"Email\",\n            \"reminderLabel\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"store\": \"Paris \u2013 20 Vend\u00f4me\",\n            \"isReminderSet\": false,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"status\": \"Completed\",\n            \"subject\": \"Email: Van Cleef & Arpels shared a product with you (mh@gmail.com)\",\n            \"ownerId\": \"0054E000004qbDFQAY\",\n            \"ownerFirstName\": \"Test\",\n            \"ownerId_LBL\": \"Test VCA\",\n            \"createdById\": \"0054E000004qbDFQAY\",\n            \"clientFirstName\": \"Mk\"\n        },\n        {\n            \"isPinned\": false,\n            \"createdDate\": \"2019-08-25T11:12:02.000Z\",\n            \"clientLastName\": \"Hr\",\n            \"id\": \"00T4E00000DT3GyUAL\",\n            \"activityDate\": \"2020-08-25\",\n            \"desc\": \"Asfasfasfafs\",\n            \"ownerLastName\": \"Dev\",\n            \"reminderLabel\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"store\": \"Houston - River Oaks District\",\n            \"isReminderSet\": false,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"subject\": \"Test44\",\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"ownerFirstName\": \"Balink\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"createdById\": \"0052p000008MZmNAAW\",\n            \"clientFirstName\": \"Mk\"\n        }\n    ],\n    \"purchases\": [\n        {\n            \"transactionDate\": \"2019-05-05\",\n            \"productImagePath\": \"6/16/616275.png\",\n            \"productId\": \"01t4E000004iMEwQAM\",\n            \"gratuity\": \"N\",\n            \"storeName\": \"Paris \u2013 Rue de la Paix\",\n            \"articleReference\": \"VCARA43100\",\n            \"transactionType\": \"SALE\",\n            \"currency\": \"EUR\",\n            \"return\": \"N\",\n            \"giftFlag\": \"#\",\n            \"amount\": 12083.33,\n            \"amountOriginal\": 12083.33,\n            \"productFamily\": \"Jewelry\",\n            \"id\": \"a0K4E000002jNpHUAU\",\n            \"productName\": \"Vintage Alhambra long necklace, 20 motifs\"\n        },\n        {\n            \"transactionDate\": \"2019-05-05\",\n            \"productImagePath\": \"16/81/1681844.png\",\n            \"productId\": \"01t4E000004iMLcQAM\",\n            \"gratuity\": \"N\",\n            \"storeName\": \"Paris \u2013 Rue de la Paix\",\n            \"articleReference\": \"VCARP34900\",\n            \"transactionType\": \"SALE\",\n            \"currency\": \"EUR\",\n            \"return\": \"N\",\n            \"giftFlag\": \"#\",\n            \"amount\": 3458.33,\n            \"amountOriginal\": 3458.33,\n            \"productFamily\": \"Jewelry\",\n            \"id\": \"a0K4E000002jNpJUAU\",\n            \"productName\": \"Vintage Alhambra bracelet, 5 motifs\"\n        },\n        {\n            \"transactionDate\": \"2019-05-05\",\n            \"productImagePath\": \"16/81/1681857.png\",\n            \"productId\": \"01t4E000004iMLbQAM\",\n            \"gratuity\": \"N\",\n            \"storeName\": \"Paris \u2013 Rue de la Paix\",\n            \"articleReference\": \"VCARP34800\",\n            \"transactionType\": \"SALE\",\n            \"currency\": \"EUR\",\n            \"return\": \"N\",\n            \"giftFlag\": \"#\",\n            \"amount\": 6875,\n            \"amountOriginal\": 6875,\n            \"productFamily\": \"Jewelry\",\n            \"id\": \"a0K4E000002jNpIUAU\",\n            \"productName\": \"Vintage Alhambra necklace, 10 motifs\"\n        }\n    ],\n    \"clientFields\": {\n        \"lastModifiedDate\": \"2019-08-22T17:49:08.000Z\",\n        \"email\": \"mh@gmail.com\",\n        \"addr5\": \"#\",\n        \"addr1\": \"2 Portofino Dr Ste 503\",\n        \"turnover\": 22416.66,\n        \"turnoverOriginal\": 22416.66,\n        \"addr2\": \"Gulf Breeze FL  32561-2502\",\n        \"storeName\": \"Paris \u2013 20 Vend\u00f4me\",\n        \"addr3\": \"USA\",\n        \"language\": \"English\",\n        \"storeCode\": \"1301\",\n        \"lastTransactionDate\": \"2019-06-04\",\n        \"segmentLabel\": \"NEW ****\",\n        \"segment\": \"NEW ****\",\n        \"firstName\": \"Mk\",\n        \"isContactableLabel\": \"Yes\",\n        \"isContactable\": \"Yes\",\n        \"businessPartner\": \"29596267\",\n        \"lastName\": \"Hr\",\n        \"mobile\": \"+1234567899\",\n        \"nationality\": \"American\",\n        \"addr4\": \"#\",\n        \"ownerName\": \"Balink Dev\",\n        \"id\": \"0014E000011kJ0cQAE\",\n        \"gender\": \"Male\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"age\": \"53\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get KPI",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "f8dfc495-b66c-44c7-898b-6f00b2d5875a",
+            "exec": [
+              "// test change"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "493b1e63-681f-4d6d-b3a3-47a29613cc38",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"0051t000001wwUfAAI\"]&period=y&getUpt=true&myStore=true",
+          "host": [
+            "{{instance_url}}"
+          ],
+          "path": [
+            "services",
+            "apexrest",
+            "retail",
+            "dashboard"
+          ],
+          "query": [
+            {
+              "key": "userIds",
+              "value": "[\"0051t000001wwUfAAI\"]"
+            },
+            {
+              "key": "period",
+              "value": "y"
+            },
+            {
+              "key": "getUpt",
+              "value": "true"
+            },
+            {
+              "key": "myStore",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "40ee0676-4dd6-4f1f-bea1-7cf8af97a9c2",
+          "name": "Get KPI Success Example",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"{{user_id}}\"]&period=y&getUpt=true&myStore=true",
+              "host": [
+                "{{instance_url}}"
+              ],
+              "path": [
+                "services",
+                "apexrest",
+                "retail",
+                "dashboard"
+              ],
+              "query": [
+                {
+                  "key": "userIds",
+                  "value": "[\"{{user_id}}\"]"
+                },
+                {
+                  "key": "period",
+                  "value": "y"
+                },
+                {
+                  "key": "getUpt",
+                  "value": "true"
+                },
+                {
+                  "key": "myStore",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 25 Aug 2019 11:51:39 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536002; includeSubDomains"
+            },
+            {
+              "key": "Public-Key-Pins-Report-Only",
+              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "Expect-CT",
+              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Robots-Tag",
+              "value": "none"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-netfree--content--encoding--remove",
+              "value": "gzip"
+            },
+            {
+              "key": "x-netfree--transfer--encoding--remove",
+              "value": "chunked"
+            },
+            {
+              "key": "x-netfree-careful-content-charset",
+              "value": "utf8"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"turnoverDataPrev\": {\n        \"average\": 49761.82,\n        \"transactions\": 113,\n        \"turnover\": 5623085.56\n    },\n    \"turnoverDataCurr\": {\n        \"average\": 9691.94,\n        \"transactions\": 89,\n        \"turnover\": 862582.54\n    },\n    \"contacted\": {\n        \"prev\": 0,\n        \"curr\": 25\n    },\n    \"segments\": [\n        {\n            \"name\": \"NEW *\",\n            \"contactedPercentage\": 14,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 7,\n            \"clientsCount\": 7\n        },\n        {\n            \"name\": \"NEW **\",\n            \"contactedPercentage\": 40,\n            \"contacted\": 2,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"NEW ***\",\n            \"contactedPercentage\": 0,\n            \"contacted\": 0,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"NEW ****\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 2,\n            \"clientsCount\": 2\n        },\n        {\n            \"name\": \"STAR (NEW)\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 2,\n            \"clientsCount\": 2\n        },\n        {\n            \"name\": \"LOYAL *\",\n            \"contactedPercentage\": 11,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 9,\n            \"clientsCount\": 9\n        },\n        {\n            \"name\": \"LOYAL **\",\n            \"contactedPercentage\": 12,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 8,\n            \"clientsCount\": 8\n        },\n        {\n            \"name\": \"LOYAL ***\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 3,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"LOYAL ****\",\n            \"contactedPercentage\": 20,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"STAR (LOYAL)\",\n            \"contactedPercentage\": 100,\n            \"contacted\": 5,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"ACTIVE *\",\n            \"contactedPercentage\": 11,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 9,\n            \"clientsCount\": 9\n        },\n        {\n            \"name\": \"ACTIVE **\",\n            \"contactedPercentage\": 20,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"ACTIVE ***\",\n            \"contactedPercentage\": 40,\n            \"contacted\": 2,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"STAR (ACTIVE)\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 2,\n            \"clientsCount\": 2\n        },\n        {\n            \"name\": \"SLEEPER *\",\n            \"contactedPercentage\": 17,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"SLEEPER **\",\n            \"contactedPercentage\": 40,\n            \"contacted\": 2,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"SLEEPER ****\",\n            \"contactedPercentage\": 0,\n            \"contacted\": 0,\n            \"clientsCountPercentage\": 4,\n            \"clientsCount\": 4\n        },\n        {\n            \"name\": \"PROSPECT\",\n            \"contactedPercentage\": 17,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"others\",\n            \"contactedPercentage\": 0,\n            \"contacted\": 0,\n            \"clientsCountPercentage\": 1,\n            \"clientsCount\": 1\n        },\n        {\n            \"name\": \"total\",\n            \"contactedPercentage\": 26,\n            \"contacted\": 25,\n            \"clientsCountPercentage\": 100,\n            \"clientsCount\": 98\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Config Success Example",
+      "_postman_id": "13ececd3-4e92-45d0-b2d2-7633a4d53c86",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{instance_url}}/services/apexrest/retail/config"
+      },
+      "response": [
+        {
+          "id": "cbc86908-4fd8-4d8c-b0e6-c737ef433656",
+          "name": "Get Config Success Example",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{instance_url}}/services/apexrest/retail/config"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 25 Aug 2019 11:31:35 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536002; includeSubDomains"
+            },
+            {
+              "key": "Public-Key-Pins-Report-Only",
+              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "Expect-CT",
+              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Robots-Tag",
+              "value": "none"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-netfree--content--encoding--remove",
+              "value": "gzip"
+            },
+            {
+              "key": "x-netfree--transfer--encoding--remove",
+              "value": "chunked"
+            },
+            {
+              "key": "x-netfree-careful-content-charset",
+              "value": "utf8"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"userInfos\": {\n        \"imagePath\": \"https://mediastorage.richemont.com/damdatastore/QuA/vca/\",\n        \"storeName\": \"Houston - River Oaks District\",\n        \"priceIncludeTax\": true,\n        \"storeId\": \"a0R4E00000Du6CzUAJ\",\n        \"photoUrl\": \"https://vancleefarpels--retail--c.documentforce.com/profilephoto/7294E000000O5r8/F\",\n        \"id\": \"0052p000008MZmNAAW\",\n        \"currency\": \"EUR\",\n        \"lang\": \"en_US\",\n        \"email\": \"dev@balink.net\",\n        \"lastName\": \"Dev\",\n        \"storeCode\": \"3088\",\n        \"firstName\": \"Balink\",\n        \"name\": \"Balink Dev\"\n    },\n    \"SAs\": [],\n    \"queries\": [\n        {\n            \"id\": \"clientQuery\",\n            \"name\": \"Clients\",\n            \"query\": \"SELECT Is_Contactable__pc, toLabel(Is_Contactable__pc) isContactableLabel, Last_Sale_Date__pc, LastName, PersonMobilePhone, FirstName, Birthday_Month__pc, Segment__pc, PersonEmail, OwnerId, Turnover__pc, convertCurrency(Turnover__pc) Turnover__pcConverted, Id, Birthday_Year__pc, First_Sale_Date__pc, Birthday_Day__pc, LastContactedDate__c  FROM Account WHERE Id != ''  AND Main_Store__pr.Store_Code__c = '3088'\"\n        },\n        {\n            \"id\": \"productQuery\",\n            \"name\": \"Products\",\n            \"query\": \"SELECT COM_CLEANING_DESC__c, WBR_Interchangeable__c, WMF_Size__c, COM_Marketing_description__c, Id, COM_ENGRAVING_DESC__c, CRE_Collection_Product_Line__c, COM_THEMATIC__c, toLabel(COM_THEMATIC__c) thematicLabel, COM_TOTAL_CARATS_BY_GEM__c, Product_Family__c, WMO_Power_Reserve__c, WMO_Function_Type__c, Size_Adjustment_Value__c, WMF_Water_Resistant__c, COM_SPECIFIC_HIGHLIGHTS__c, CRE_SAP_Reference__c, Name, PIM_CRE_JMF_SIZE_INT__c, COM_SUB_COLLECTION__c, toLabel(COM_SUB_COLLECTION__c) subCollectionLabel, COM_REPLACEMENT_STONE_DESC__c, COM_size_adjustment__c, toLabel(COM_size_adjustment__c) sizeAdjustmentLabel, CRE_PRODUCT_TYPE__c, JMF_MAIN_MATERIAL__c, toLabel(JMF_MAIN_MATERIAL__c) mainMaterialLabel, CRE_JMF_STANDARD_SIZE_RANGE__c, COM_POLISHING_DESC__c, WBR_Self_Interchangeable__c, COM_PRODUCT_LAUNCH_DATE__c, CRE_Limited_Edition__c  FROM Product2\"\n        },\n        {\n            \"id\": \"stoneQuery\",\n            \"name\": \"Stones\",\n            \"query\": \"SELECT Quantity__c, Id, STO_COLOR__c, Product__c, STO_CUT__c, TOTAL_CARATS__c, STO_TYPE__c, toLabel(STO_TYPE__c) typeLabel, TOTAL_CARATS_UNIT__c  FROM Stone__c\"\n        }\n    ],\n    \"picklists\": [\n        {\n            \"values\": \"86400;172800;604800\",\n            \"objectName\": \"Event\",\n            \"labels\": \"1 day before;2 days before;1 week before\",\n            \"id\": \"1566732695526Reminder__cEvent\",\n            \"fieldName\": \"Reminder__c\",\n            \"controllingFieldValue\": null,\n            \"ControllingFieldName\": null\n        }\n    ],\n    \"mappings\": [\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Is_Contactable__pc\",\n            \"id\": \"IsContactable\",\n            \"wrapperFieldName\": \"isContactable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_CLEANING_DESC__c\",\n            \"id\": \"ProductCleaningDesc\",\n            \"wrapperFieldName\": \"cleaningDesc\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Quantity__c\",\n            \"id\": \"StoneCaratQuantity\",\n            \"wrapperFieldName\": \"quantity\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Last_Sale_Date__pc\",\n            \"id\": \"ClientLastSaleDate\",\n            \"wrapperFieldName\": \"lastSaleDate\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Is_Contactable__pc\",\n            \"id\": \"CFIsContactable\",\n            \"wrapperFieldName\": \"isContactable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WBR_Interchangeable__c\",\n            \"id\": \"ProductInterchangeable\",\n            \"wrapperFieldName\": \"interchangeable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMF_Size__c\",\n            \"id\": \"ProductWMFSize\",\n            \"wrapperFieldName\": \"wmfSize\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_Marketing_description__c\",\n            \"id\": \"ProductMarketingDesc\",\n            \"wrapperFieldName\": \"marketingDescription\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"LastName\",\n            \"id\": \"ClientLastName\",\n            \"wrapperFieldName\": \"lastName\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Id\",\n            \"id\": \"ProductId\",\n            \"wrapperFieldName\": \"id\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"PersonMobilePhone\",\n            \"id\": \"MobilePhone\",\n            \"wrapperFieldName\": \"mobile\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Id\",\n            \"id\": \"StoneId\",\n            \"wrapperFieldName\": \"id\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_ENGRAVING_DESC__c\",\n            \"id\": \"ProductEngravingDesc\",\n            \"wrapperFieldName\": \"engravingDesc\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_Collection_Product_Line__c\",\n            \"id\": \"ProductCollectionName\",\n            \"wrapperFieldName\": \"collectionId\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"FirstName\",\n            \"id\": \"ClientFirstName\",\n            \"wrapperFieldName\": \"firstName\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_THEMATIC__c\",\n            \"id\": \"ProductThematic\",\n            \"wrapperFieldName\": \"thematic\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_TOTAL_CARATS_BY_GEM__c\",\n            \"id\": \"ProductTotalCaratsByGem\",\n            \"wrapperFieldName\": \"totalCaratsByGem\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"STO_COLOR__c\",\n            \"id\": \"StoneColor\",\n            \"wrapperFieldName\": \"color\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Product_Family__c\",\n            \"id\": \"ProductFamilyId1\",\n            \"wrapperFieldName\": \"productFamilyId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMO_Power_Reserve__c\",\n            \"id\": \"ProductPowerReserve\",\n            \"wrapperFieldName\": \"powerReserve\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMO_Function_Type__c\",\n            \"id\": \"ProductFunctionType\",\n            \"wrapperFieldName\": \"functionType\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Size_Adjustment_Value__c\",\n            \"id\": \"ProductSizeAdjustmentValue\",\n            \"wrapperFieldName\": \"sizeAdjustmentValue\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Birthday_Month__pc\",\n            \"id\": \"ClientBirthdayMonth\",\n            \"wrapperFieldName\": \"birthdayMonth\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Segment__pc\",\n            \"id\": \"ClientIdSegment\",\n            \"wrapperFieldName\": \"segment\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Product__c\",\n            \"id\": \"StoneProductId\",\n            \"wrapperFieldName\": \"productId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMF_Water_Resistant__c\",\n            \"id\": \"ProductWaterResistant\",\n            \"wrapperFieldName\": \"waterResistant\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_SPECIFIC_HIGHLIGHTS__c\",\n            \"id\": \"ProductSpecificHighlights\",\n            \"wrapperFieldName\": \"specificHighlight\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_SAP_Reference__c\",\n            \"id\": \"ProductSAPReference\",\n            \"wrapperFieldName\": \"sapReference\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Name\",\n            \"id\": \"ProductName\",\n            \"wrapperFieldName\": \"name\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"PIM_CRE_JMF_SIZE_INT__c\",\n            \"id\": \"ProductJmfSizeInt\",\n            \"wrapperFieldName\": \"sizeInt\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Product_Family__c\",\n            \"id\": \"ProductFamily\",\n            \"wrapperFieldName\": \"familyId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_SUB_COLLECTION__c\",\n            \"id\": \"ProductSubCollectionText\",\n            \"wrapperFieldName\": \"subCollection\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"PersonEmail\",\n            \"id\": \"Email\",\n            \"wrapperFieldName\": \"email\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"OwnerId\",\n            \"id\": \"ClientsOwnerId\",\n            \"wrapperFieldName\": \"ownerId\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"STO_CUT__c\",\n            \"id\": \"StoneCut\",\n            \"wrapperFieldName\": \"cut\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_REPLACEMENT_STONE_DESC__c\",\n            \"id\": \"ProductReplacementStoneDesc\",\n            \"wrapperFieldName\": \"replacmentStoneDesc\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": true,\n            \"sfFieldName\": \"Turnover__pc\",\n            \"id\": \"ClientTurnover1\",\n            \"wrapperFieldName\": \"turnover\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"TOTAL_CARATS__c\",\n            \"id\": \"StoneCarats\",\n            \"wrapperFieldName\": \"carats\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Id\",\n            \"id\": \"ClientIdDetail\",\n            \"wrapperFieldName\": \"id\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_size_adjustment__c\",\n            \"id\": \"ProductSizeAdjustment\",\n            \"wrapperFieldName\": \"sizeAdjustment\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_PRODUCT_TYPE__c\",\n            \"id\": \"ProductType\",\n            \"wrapperFieldName\": \"productTypeId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"JMF_MAIN_MATERIAL__c\",\n            \"id\": \"ProductMainMaterial\",\n            \"wrapperFieldName\": \"mainMaterial\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"STO_TYPE__c\",\n            \"id\": \"StoneType\",\n            \"wrapperFieldName\": \"type\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_JMF_STANDARD_SIZE_RANGE__c\",\n            \"id\": \"ProductStandardSizeRange\",\n            \"wrapperFieldName\": \"standardSizeRange\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"TOTAL_CARATS_UNIT__c\",\n            \"id\": \"StoneCaratUnits\",\n            \"wrapperFieldName\": \"caratsUnit\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Birthday_Year__pc\",\n            \"id\": \"ClientBirthdayYear\",\n            \"wrapperFieldName\": \"birthdayYear\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"First_Sale_Date__pc\",\n            \"id\": \"ClientFirstSaleDate\",\n            \"wrapperFieldName\": \"firstSaleDate\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_POLISHING_DESC__c\",\n            \"id\": \"ProductPolishingDesc\",\n            \"wrapperFieldName\": \"polishingDesc\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"OwnerName\",\n            \"id\": \"ClientsOwnerName\",\n            \"wrapperFieldName\": \"ownerName\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WBR_Self_Interchangeable__c\",\n            \"id\": \"ProductSelfInterchangeable\",\n            \"wrapperFieldName\": \"selfInterchangeable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_PRODUCT_LAUNCH_DATE__c\",\n            \"id\": \"ProductLaunchDate\",\n            \"wrapperFieldName\": \"launchDate\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Birthday_Day__pc\",\n            \"id\": \"ClientBirthdayDay\",\n            \"wrapperFieldName\": \"birthdayDay\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_Limited_Edition__c\",\n            \"id\": \"ProductLimitedEdition\",\n            \"wrapperFieldName\": \"limitedEdition\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"LastContactedDate__c\",\n            \"id\": \"ClientLastContactedDate\",\n            \"wrapperFieldName\": \"lastContactedDate\"\n        }\n    ],\n    \"emailTemplatesFields\": [\n        {\n            \"strToReplace\": \"{!User.Phone}\",\n            \"field\": \"phone\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5kQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Sales Advisor Name}\",\n            \"field\": \"ownerName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5iQAA\"\n        },\n        {\n            \"strToReplace\": \"{SA Name}\",\n            \"field\": \"name\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5mQAA\"\n        },\n        {\n            \"strToReplace\": \"{!User.Mobile}\",\n            \"field\": \"mobile\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5jQAA\"\n        },\n        {\n            \"strToReplace\": \"{Mr/Mrs}\",\n            \"field\": \"salutationLabel\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5dQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Contact.FirstName}\",\n            \"field\": \"firstName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5eQAA\"\n        },\n        {\n            \"strToReplace\": \"{Customer Last Name}\",\n            \"field\": \"lastName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5fQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Account.StoreReferenceDeclared__pc}\",\n            \"field\": \"storeName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5gQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Contact.Birthdate}\",\n            \"field\": \"birthdayDate\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5hQAA\"\n        },\n        {\n            \"strToReplace\": \"{Sales Advisor Name}\",\n            \"field\": \"name\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000000IseQAE\"\n        },\n        {\n            \"strToReplace\": \"{!User. Base_Store_Code__c}\",\n            \"field\": \"storeName\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5lQAA\"\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Email Template",
+      "_postman_id": "bdb1d479-dc48-4ab5-9b58-9788164ce492",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{instance_url}}/services/apexrest/retail/emailTemplates"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Product Hierarchy",
+      "_postman_id": "cf06daaa-cc6f-4ce2-b43b-502def1a10c9",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"0051t000001wwUfAAI\"]&period=y&getUpt=true&myStore=true",
+          "host": [
+            "{{instance_url}}"
+          ],
+          "path": [
+            "services",
+            "apexrest",
+            "retail",
+            "dashboard"
+          ],
+          "query": [
+            {
+              "key": "userIds",
+              "value": "[\"0051t000001wwUfAAI\"]"
+            },
+            {
+              "key": "period",
+              "value": "y"
+            },
+            {
+              "key": "getUpt",
+              "value": "true"
+            },
+            {
+              "key": "myStore",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Product Misc",
+      "_postman_id": "a22984d9-b723-49b9-9f98-038b722ab3a6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{instance_url}}/services/apexrest/retail/productMisc"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Activities",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "803e0803-5761-499d-8040-cfbe12ea4a16",
+            "exec": [
+              "// test"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "4f7cf6a1-850b-4005-bbc8-18e473d5c492",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{instance_url}}/services/apexrest/retail/activities"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Activities",
+      "_postman_id": "c00f2fd9-de72-4b51-870a-51a95aecac66",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{instance_url}}/services/apexrest/retail/activities?id=00T1l000006KxOjEAK&objectName=tASK",
+          "host": [
+            "{{instance_url}}"
+          ],
+          "path": [
+            "services",
+            "apexrest",
+            "retail",
+            "activities"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "00T1l000006KxOjEAK"
+            },
+            {
+              "key": "objectName",
+              "value": "tASK"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Activity",
+      "_postman_id": "9f01eef7-7d62-4d4b-b1d9-170d92092434",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"objectName\": \"Note__c\",\n    \"items\": [\n        {\n        \t\"client\":\"0011l00000EiGxlAAF\",\n            \"title\": \"test title\"\n        }\n    ]\n}"
+        },
+        "url": "{{instance_url}}/services/apexrest/retail/notes"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Wishlist",
+      "_postman_id": "e9a9e6b0-999c-4f5d-a130-31485c1d823d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"objectName\": \"Note__c\",\n    \"items\": [\n        {\n        \t\"client\":\"0011l00000EiGxlAAF\",\n            \"title\": \"test title\"\n        }\n    ]\n}"
+        },
+        "url": "{{instance_url}}/services/apexrest/retail/notes"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Client List",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "f8dfc495-b66c-44c7-898b-6f00b2d5875a",
+            "exec": [
+              "// test change"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "a6ac00db-19b7-46be-ba80-729ff0820695",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"0051t000001wwUfAAI\"]&period=y&getUpt=true&myStore=true",
+          "host": [
+            "{{instance_url}}"
+          ],
+          "path": [
+            "services",
+            "apexrest",
+            "retail",
+            "dashboard"
+          ],
+          "query": [
+            {
+              "key": "userIds",
+              "value": "[\"0051t000001wwUfAAI\"]"
+            },
+            {
+              "key": "period",
+              "value": "y"
+            },
+            {
+              "key": "getUpt",
+              "value": "true"
+            },
+            {
+              "key": "myStore",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "9a673ed1-3569-4dcb-b681-887cf20f568e",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "bc0283bc-7d14-4bf1-a265-52d1387ceaca",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
