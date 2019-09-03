@@ -1198,6 +1198,11 @@
               " var jsonData = pm.response.json();",
               "",
               "pm.environment.set(\"activity_id\", jsonData.data[0].id);",
+              "",
+              "pm.test(\"Response body contains array\", function () {",
+              "    pm.expect(Array.isArray(jsonData.data)).to.be.true;",
+              "    ",
+              "});",
               ""
             ],
             "type": "text/javascript"
