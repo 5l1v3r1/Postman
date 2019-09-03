@@ -1626,6 +1626,22 @@
             ],
             "type": "text/javascript"
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "176821fe-0e46-48d6-a8de-b1ae9c252410",
+            "exec": [
+              "",
+              "",
+              "pm.test(\"Response body contains Object\", function () {",
+              "    pm.expect(pm.response.json() instanceof Object).to.be.true;",
+              "    ",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
         }
       ],
       "_postman_id": "a6ac00db-19b7-46be-ba80-729ff0820695",
