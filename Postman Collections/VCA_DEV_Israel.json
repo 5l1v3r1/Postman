@@ -129,13 +129,13 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"objectName\": \"Note__c\",\n    \"items\": [\n        {\n            \"client\": \"0014E000011kJ0cQAE\",\n            \"private\": true,\n            \"description\": \"Test Add Note\"\n        }\n    ]\n}"
+          "raw": "{{params_add_note}}"
         },
         "url": "{{instance_url}}/services/apexrest/retail/notes"
       },
       "response": [
         {
-          "id": "5ee4d0d6-2331-4960-a6fd-c3918e18d445",
+          "id": "72046b24-08f2-4918-8bcf-943da07f4ccb",
           "name": "Add Note Success Example",
           "originalRequest": {
             "method": "POST",
@@ -157,7 +157,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"objectName\": \"Note__c\",\n    \"items\": [\n        {\n            \"client\": \"0014E000011kJ0cQAE\",\n            \"private\": true,\n            \"description\": \"Test Add Note\"\n        }\n    ]\n}"
+              "raw": "{\n    \"objectName\": \"Note__c\",\n    \"items\": [\n        {\n            \"client\": \"{{client_id}}\",\n            \"private\": true,\n            \"description\": \"Test Add Note\"\n        }\n    ]\n}"
             },
             "url": "{{instance_url}}/services/apexrest/retail/notes"
           },
@@ -167,7 +167,7 @@
           "header": [
             {
               "key": "Date",
-              "value": "Sun, 25 Aug 2019 11:27:33 GMT"
+              "value": "Tue, 03 Sep 2019 08:30:42 GMT"
             },
             {
               "key": "Strict-Transport-Security",
@@ -228,7 +228,7 @@
           ],
           "cookie": [],
           "responseTime": null,
-          "body": "{\n    \"data\": [\n        {\n            \"CreatedById\": \"0052p000008MZmNAAW\",\n            \"title\": \"N-0066\",\n            \"client\": \"0014E000011kJ0cQAE\",\n            \"description\": \"Test Add Note\",\n            \"date\": \"2019-08-25T11:27:33.000Z\",\n            \"id\": \"a024E000005RskbQAC\"\n        }\n    ],\n    \"text\": \"Success\"\n}"
+          "body": "{\n    \"data\": [\n        {\n            \"CreatedById\": \"0052p000008MZmNAAW\",\n            \"title\": \"N-0108\",\n            \"client\": \"0014E000011kJ0cQAE\",\n            \"description\": \"Test Add Note\",\n            \"date\": \"2019-09-03T08:30:42.000Z\",\n            \"id\": \"a024E000005aSBCQA2\"\n        }\n    ],\n    \"text\": \"Success\"\n}"
         }
       ]
     },
