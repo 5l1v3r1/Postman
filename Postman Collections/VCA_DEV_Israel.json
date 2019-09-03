@@ -1188,127 +1188,6 @@
       ]
     },
     {
-      "name": "Get Activities",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "803e0803-5761-499d-8040-cfbe12ea4a16",
-            "exec": [
-              "// test"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "_postman_id": "4f7cf6a1-850b-4005-bbc8-18e473d5c492",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer {{access_token}}"
-          },
-          {
-            "key": "Accept",
-            "value": "application/json"
-          }
-        ],
-        "url": "{{instance_url}}/services/apexrest/retail/activities"
-      },
-      "response": [
-        {
-          "id": "10f62f9a-050e-4d20-b044-83165c84ba19",
-          "name": "Get Activities  Success Example",
-          "originalRequest": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{access_token}}"
-              },
-              {
-                "key": "Accept",
-                "value": "application/json"
-              }
-            ],
-            "url": "{{instance_url}}/services/apexrest/retail/activities"
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Date",
-              "value": "Sun, 25 Aug 2019 12:36:10 GMT"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=31536002; includeSubDomains"
-            },
-            {
-              "key": "Public-Key-Pins-Report-Only",
-              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
-            },
-            {
-              "key": "Expect-CT",
-              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-XSS-Protection",
-              "value": "1; mode=block"
-            },
-            {
-              "key": "X-Robots-Tag",
-              "value": "none"
-            },
-            {
-              "key": "Cache-Control",
-              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Vary",
-              "value": "Accept-Encoding"
-            },
-            {
-              "key": "x-netfree--content--encoding--remove",
-              "value": "gzip"
-            },
-            {
-              "key": "x-netfree--transfer--encoding--remove",
-              "value": "chunked"
-            },
-            {
-              "key": "x-netfree-careful-content-charset",
-              "value": "utf8"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            }
-          ],
-          "cookie": [],
-          "responseTime": null,
-          "body": "[\n    {\n        \"isPinned\": false,\n        \"createdDate\": \"2019-08-21T12:13:40.000Z\",\n        \"clientLastName\": \"Ao\",\n        \"id\": \"00T4E00000DSsdDUAT\",\n        \"activityDate\": \"2019-08-21\",\n        \"ownerLastName\": \"Dev\",\n        \"reminderLabel\": null,\n        \"clientId_LBL\": \"Ne Ao\",\n        \"store\": \"Houston - River Oaks District\",\n        \"isReminderSet\": false,\n        \"priority\": \"Normal\",\n        \"clientId\": \"0014E000011kJ09QAE\",\n        \"subject\": \"test sm\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"ownerFirstName\": \"Balink\",\n        \"ownerId_LBL\": \"Balink Dev\",\n        \"createdById\": \"0052p000008MZmNAAW\",\n        \"clientFirstName\": \"Ne\"\n    },\n    {\n        \"isPinned\": false,\n        \"createdDate\": \"2019-08-20T12:42:38.000Z\",\n        \"clientLastName\": \"Bn\",\n        \"id\": \"00T4E00000DSnaYUAT\",\n        \"activityDate\": \"2019-08-22\",\n        \"ownerLastName\": \"Dev\",\n        \"reminderLabel\": null,\n        \"clientId_LBL\": \"Jo Bn\",\n        \"store\": \"Houston - River Oaks District\",\n        \"isReminderSet\": false,\n        \"priority\": \"Normal\",\n        \"clientId\": \"0014E000011kJ4bQAE\",\n        \"subject\": \"SA tasks\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"ownerFirstName\": \"Balink\",\n        \"ownerId_LBL\": \"Balink Dev\",\n        \"createdById\": \"0052p000008MZmNAAW\",\n        \"clientFirstName\": \"Jo\"\n    },\n    {\n        \"isPinned\": false,\n        \"createdDate\": \"2019-08-22T06:58:07.000Z\",\n        \"clientLastName\": \"Ai\",\n        \"id\": \"00T4E00000DSvcgUAD\",\n        \"activityDate\": \"2019-08-23\",\n        \"ownerLastName\": \"Dev\",\n        \"reminderLabel\": null,\n        \"clientId_LBL\": \"Ma Ai\",\n        \"store\": \"Houston - River Oaks District\",\n        \"isReminderSet\": false,\n        \"priority\": \"Normal\",\n        \"clientId\": \"0014E000011kJ0fQAE\",\n        \"subject\": \"test123\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"ownerFirstName\": \"Balink\",\n        \"ownerId_LBL\": \"Balink Dev\",\n        \"createdById\": \"0052p000008MZmNAAW\",\n        \"clientFirstName\": \"Ma\"\n    },\n    {\n        \"isPinned\": false,\n        \"createdDate\": \"2019-08-25T08:30:54.000Z\",\n        \"clientLastName\": \"Re\",\n        \"id\": \"00T4E00000DT3GFUA1\",\n        \"activityDate\": \"2019-08-25\",\n        \"ownerLastName\": \"Dev\",\n        \"reminderLabel\": null,\n        \"clientId_LBL\": \"Ie Re\",\n        \"store\": \"Houston - River Oaks District\",\n        \"isReminderSet\": false,\n        \"priority\": \"Normal\",\n        \"clientId\": \"0014E000011kJ0aQAE\",\n        \"subject\": \"Test99\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"ownerFirstName\": \"Balink\",\n        \"ownerId_LBL\": \"Balink Dev\",\n        \"createdById\": \"0052p000008MZmNAAW\",\n        \"clientFirstName\": \"Ie\"\n    },\n    {\n        \"isPinned\": false,\n        \"createdDate\": \"2019-08-11T16:08:08.000Z\",\n        \"clientLastName\": \"Aa\",\n        \"id\": \"00T4E00000DSKZtUAP\",\n        \"activityDate\": \"2019-08-12\",\n        \"desc\": \"Vbmvbm\",\n        \"ownerLastName\": \"Dev\",\n        \"reminderLabel\": null,\n        \"clientId_LBL\": \"Ar Aa\",\n        \"store\": \"Houston - River Oaks District\",\n        \"isReminderSet\": false,\n        \"priority\": \"Normal\",\n        \"clientId\": \"0014E000011kJ0LQAU\",\n        \"subject\": \"test55\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"ownerFirstName\": \"Balink\",\n        \"ownerId_LBL\": \"Balink Dev\",\n        \"createdById\": \"0052p000008MZmNAAW\",\n        \"clientFirstName\": \"Ar\"\n    }\n]"
-        }
-      ]
-    },
-    {
       "name": "Add Activity",
       "_postman_id": "9f01eef7-7d62-4d4b-b1d9-170d92092434",
       "protocolProfileBehavior": {
@@ -1434,6 +1313,127 @@
           "cookie": [],
           "responseTime": null,
           "body": "{\n    \"data\": [\n        {\n            \"isPinned\": false,\n            \"createdDate\": \"2019-08-25T12:45:44.000Z\",\n            \"clientLastName\": \"Hr\",\n            \"id\": \"00T4E00000DT3HXUA1\",\n            \"activityDate\": \"2019-08-25\",\n            \"desc\": \"\u05e9\u05d3\u05db\u05d3\u05e9\u05db\",\n            \"ownerLastName\": \"Dev\",\n            \"reminderLabel\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"store\": \"Houston - River Oaks District\",\n            \"isReminderSet\": false,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"subject\": \"\u05e7\u05d3\u05d088\",\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"ownerFirstName\": \"Balink\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"createdById\": \"0052p000008MZmNAAW\",\n            \"clientFirstName\": \"Mk\"\n        }\n    ],\n    \"text\": \"Success\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Activities",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "803e0803-5761-499d-8040-cfbe12ea4a16",
+            "exec": [
+              "// test"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "4f7cf6a1-850b-4005-bbc8-18e473d5c492",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{instance_url}}/services/apexrest/retail/activities"
+      },
+      "response": [
+        {
+          "id": "10f62f9a-050e-4d20-b044-83165c84ba19",
+          "name": "Get Activities  Success Example",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{instance_url}}/services/apexrest/retail/activities"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 25 Aug 2019 12:36:10 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536002; includeSubDomains"
+            },
+            {
+              "key": "Public-Key-Pins-Report-Only",
+              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "Expect-CT",
+              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Robots-Tag",
+              "value": "none"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-netfree--content--encoding--remove",
+              "value": "gzip"
+            },
+            {
+              "key": "x-netfree--transfer--encoding--remove",
+              "value": "chunked"
+            },
+            {
+              "key": "x-netfree-careful-content-charset",
+              "value": "utf8"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "[\n    {\n        \"isPinned\": false,\n        \"createdDate\": \"2019-08-21T12:13:40.000Z\",\n        \"clientLastName\": \"Ao\",\n        \"id\": \"00T4E00000DSsdDUAT\",\n        \"activityDate\": \"2019-08-21\",\n        \"ownerLastName\": \"Dev\",\n        \"reminderLabel\": null,\n        \"clientId_LBL\": \"Ne Ao\",\n        \"store\": \"Houston - River Oaks District\",\n        \"isReminderSet\": false,\n        \"priority\": \"Normal\",\n        \"clientId\": \"0014E000011kJ09QAE\",\n        \"subject\": \"test sm\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"ownerFirstName\": \"Balink\",\n        \"ownerId_LBL\": \"Balink Dev\",\n        \"createdById\": \"0052p000008MZmNAAW\",\n        \"clientFirstName\": \"Ne\"\n    },\n    {\n        \"isPinned\": false,\n        \"createdDate\": \"2019-08-20T12:42:38.000Z\",\n        \"clientLastName\": \"Bn\",\n        \"id\": \"00T4E00000DSnaYUAT\",\n        \"activityDate\": \"2019-08-22\",\n        \"ownerLastName\": \"Dev\",\n        \"reminderLabel\": null,\n        \"clientId_LBL\": \"Jo Bn\",\n        \"store\": \"Houston - River Oaks District\",\n        \"isReminderSet\": false,\n        \"priority\": \"Normal\",\n        \"clientId\": \"0014E000011kJ4bQAE\",\n        \"subject\": \"SA tasks\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"ownerFirstName\": \"Balink\",\n        \"ownerId_LBL\": \"Balink Dev\",\n        \"createdById\": \"0052p000008MZmNAAW\",\n        \"clientFirstName\": \"Jo\"\n    },\n    {\n        \"isPinned\": false,\n        \"createdDate\": \"2019-08-22T06:58:07.000Z\",\n        \"clientLastName\": \"Ai\",\n        \"id\": \"00T4E00000DSvcgUAD\",\n        \"activityDate\": \"2019-08-23\",\n        \"ownerLastName\": \"Dev\",\n        \"reminderLabel\": null,\n        \"clientId_LBL\": \"Ma Ai\",\n        \"store\": \"Houston - River Oaks District\",\n        \"isReminderSet\": false,\n        \"priority\": \"Normal\",\n        \"clientId\": \"0014E000011kJ0fQAE\",\n        \"subject\": \"test123\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"ownerFirstName\": \"Balink\",\n        \"ownerId_LBL\": \"Balink Dev\",\n        \"createdById\": \"0052p000008MZmNAAW\",\n        \"clientFirstName\": \"Ma\"\n    },\n    {\n        \"isPinned\": false,\n        \"createdDate\": \"2019-08-25T08:30:54.000Z\",\n        \"clientLastName\": \"Re\",\n        \"id\": \"00T4E00000DT3GFUA1\",\n        \"activityDate\": \"2019-08-25\",\n        \"ownerLastName\": \"Dev\",\n        \"reminderLabel\": null,\n        \"clientId_LBL\": \"Ie Re\",\n        \"store\": \"Houston - River Oaks District\",\n        \"isReminderSet\": false,\n        \"priority\": \"Normal\",\n        \"clientId\": \"0014E000011kJ0aQAE\",\n        \"subject\": \"Test99\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"ownerFirstName\": \"Balink\",\n        \"ownerId_LBL\": \"Balink Dev\",\n        \"createdById\": \"0052p000008MZmNAAW\",\n        \"clientFirstName\": \"Ie\"\n    },\n    {\n        \"isPinned\": false,\n        \"createdDate\": \"2019-08-11T16:08:08.000Z\",\n        \"clientLastName\": \"Aa\",\n        \"id\": \"00T4E00000DSKZtUAP\",\n        \"activityDate\": \"2019-08-12\",\n        \"desc\": \"Vbmvbm\",\n        \"ownerLastName\": \"Dev\",\n        \"reminderLabel\": null,\n        \"clientId_LBL\": \"Ar Aa\",\n        \"store\": \"Houston - River Oaks District\",\n        \"isReminderSet\": false,\n        \"priority\": \"Normal\",\n        \"clientId\": \"0014E000011kJ0LQAU\",\n        \"subject\": \"test55\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"ownerFirstName\": \"Balink\",\n        \"ownerId_LBL\": \"Balink Dev\",\n        \"createdById\": \"0052p000008MZmNAAW\",\n        \"clientFirstName\": \"Ar\"\n    }\n]"
         }
       ]
     },
