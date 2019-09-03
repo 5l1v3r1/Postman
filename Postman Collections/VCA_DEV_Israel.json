@@ -590,7 +590,7 @@
           }
         ],
         "url": {
-          "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"0051t000001wwUfAAI\"]&period=y&getUpt=true&myStore=true",
+          "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"{{user_id}}\"]&period=y&getUpt=true&myStore=true",
           "host": [
             "{{instance_url}}"
           ],
@@ -603,7 +603,7 @@
           "query": [
             {
               "key": "userIds",
-              "value": "[\"0051t000001wwUfAAI\"]"
+              "value": "[\"{{user_id}}\"]"
             },
             {
               "key": "period",
