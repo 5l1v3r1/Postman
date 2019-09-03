@@ -1769,7 +1769,33 @@
         "id": "bc0283bc-7d14-4bf1-a265-52d1387ceaca",
         "type": "text/javascript",
         "exec": [
-          ""
+          "",
+          "pm.test(\"TEST Apex Error (Attempt to de-reference a null object)\", function () { ",
+          "    var isTrue = responseBody.has(\"Attempt to de-reference a null object\") && testPass;",
+          "    if(isTrue)",
+          "        console.log(\"*****Error***** = \\n\" + responseBody + \"\\n\");",
+          "    pm.expect(isTrue).to.be.false ;",
+          "});    ",
+          "",
+          "pm.test(\"TEST Apex Error (List has no rows...)\", function () { ",
+          "    var isTrue = responseBody.has(\"List has no rows\")&& testPass;",
+          "    if(isTrue)",
+          "        console.log(\"*****Error***** = \\n\" + responseBody + \"\\n\");",
+          "    pm.expect(isTrue).to.be.false;",
+          "});",
+          "",
+          "pm.test(\"TEST Status (400 or 500)\", function () { ",
+          "    testPass&&pm.response.to.not.have.status(400);",
+          "    testPass&&pm.response.to.not.have.status(500);",
+          "});",
+          "",
+          "",
+          "pm.test(\"TEST Unknown Issue (get HTML)\", function () { ",
+          "    var isTrue = responseBody.has(\"<!DOCTYPE HTML PUBLIC\");",
+          "    if(isTrue)",
+          "        console.log(\"*****Error***** = \\n\" + responseBody + \"\\n\");",
+          "    pm.expect(isTrue).to.be.false|| testPass;",
+          "});"
         ]
       }
     }
