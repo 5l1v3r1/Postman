@@ -234,6 +234,25 @@
     },
     {
       "name": "Delete Note",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "160d3b97-895c-4f72-bcc7-79f0946ec44a",
+            "exec": [
+              "pm.test(\"Record deleted\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(pm.response.json()).to.be.true;",
+              "});",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "_postman_id": "5d5eb6d6-c335-43f8-b8ce-d7939ad68b78",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -251,7 +270,7 @@
           }
         ],
         "url": {
-          "raw": "{{instance_url}}/services/apexrest/retail/notes?id=a024E000005RskbQAC",
+          "raw": "{{instance_url}}/services/apexrest/retail/notes?id={{note_id}}",
           "host": [
             "{{instance_url}}"
           ],
@@ -264,7 +283,7 @@
           "query": [
             {
               "key": "id",
-              "value": "a024E000005RskbQAC"
+              "value": "{{note_id}}"
             }
           ]
         }
