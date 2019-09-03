@@ -1769,6 +1769,7 @@
         "id": "bc0283bc-7d14-4bf1-a265-52d1387ceaca",
         "type": "text/javascript",
         "exec": [
+          "var testPass= pm.iterationData.get(\"is_test_should_pass\") ==='TRUE';",
           "",
           "pm.test(\"TEST Apex Error (Attempt to de-reference a null object)\", function () { ",
           "    var isTrue = responseBody.has(\"Attempt to de-reference a null object\") && testPass;",
