@@ -85,6 +85,26 @@
     },
     {
       "name": "Add Note",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "decace82-eec8-40e5-8f73-8b9b436de0de",
+            "exec": [
+              " var jsonData = pm.response.json();",
+              "",
+              "pm.environment.set(\"note_id\", jsonData.data[0].id);",
+              "",
+              "pm.test(\"Response body contains array\", function () {",
+              "    pm.expect(Array.isArray(jsonData.data)).to.be.true;",
+              "    ",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "_postman_id": "f0913a0a-a7d5-4325-aef2-eefe5716bfe8",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
