@@ -1439,6 +1439,24 @@
     },
     {
       "name": "Delete Activities",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "41af151f-b3ba-4125-98db-2a4a5847ee9f",
+            "exec": [
+              "pm.test(\"Record deleted\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(pm.response.json()).to.be.true;",
+              "});",
+              "",
+              "",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "_postman_id": "c00f2fd9-de72-4b51-870a-51a95aecac66",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -1456,7 +1474,7 @@
           }
         ],
         "url": {
-          "raw": "{{instance_url}}/services/apexrest/retail/activities?id=00T4E00000DSsdDUAT&objectName=Task",
+          "raw": "{{instance_url}}/services/apexrest/retail/activities?id={{activity_id}}&objectName=Task",
           "host": [
             "{{instance_url}}"
           ],
@@ -1469,7 +1487,7 @@
           "query": [
             {
               "key": "id",
-              "value": "00T4E00000DSsdDUAT"
+              "value": "{{activity_id}}"
             },
             {
               "key": "objectName",
