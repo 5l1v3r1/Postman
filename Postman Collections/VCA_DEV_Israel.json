@@ -1309,6 +1309,135 @@
       ]
     },
     {
+      "name": "Add Activity",
+      "_postman_id": "9f01eef7-7d62-4d4b-b1d9-170d92092434",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"items\": [\n        {\n            \"ownerId\": \"0052p000008MZmN\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"giftImage\": null,\n            \"taskType\": null,\n            \"createdById\": null,\n            \"createdBySM\": null,\n            \"desc\": \"\u05e9\u05d3\u05db\u05d3\u05e9\u05db\",\n            \"subject\": \"\u05e7\u05d3\u05d088\",\n            \"allDayEvent\": 0,\n            \"id\": null,\n            \"activityDate\": \"2019-08-25T15:45:23.148+0300\",\n            \"ownerFirstName\": null,\n            \"activityType\": \"Task\",\n            \"ownerLastName\": null,\n            \"status\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"isPinned\": 0,\n            \"isReminderSet\": 0,\n            \"outreachType\": null,\n            \"gift\": null,\n            \"location\": null,\n            \"reminderLabel\": null,\n            \"reminder\": null,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"store\": null\n        }\n    ],\n    \"objectName\": \"Task\"\n}"
+        },
+        "url": "{{instance_url}}/services/apexrest/retail/activities"
+      },
+      "response": [
+        {
+          "id": "9cd48b8e-7130-4874-b1c6-e395f1f3e3eb",
+          "name": "Add Activity  Success Example",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"items\": [\n        {\n            \"ownerId\": \"0052p000008MZmN\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"giftImage\": null,\n            \"taskType\": null,\n            \"createdById\": null,\n            \"createdBySM\": null,\n            \"desc\": \"\u05e9\u05d3\u05db\u05d3\u05e9\u05db\",\n            \"subject\": \"\u05e7\u05d3\u05d088\",\n            \"allDayEvent\": 0,\n            \"id\": null,\n            \"activityDate\": \"2019-08-25T15:45:23.148+0300\",\n            \"ownerFirstName\": null,\n            \"activityType\": \"Task\",\n            \"ownerLastName\": null,\n            \"status\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"isPinned\": 0,\n            \"isReminderSet\": 0,\n            \"outreachType\": null,\n            \"gift\": null,\n            \"location\": null,\n            \"reminderLabel\": null,\n            \"reminder\": null,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"store\": null\n        }\n    ],\n    \"objectName\": \"Task\"\n}"
+            },
+            "url": "{{instance_url}}/services/apexrest/retail/activities"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 25 Aug 2019 12:45:43 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536002; includeSubDomains"
+            },
+            {
+              "key": "Public-Key-Pins-Report-Only",
+              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "Expect-CT",
+              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Robots-Tag",
+              "value": "none"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-netfree--content--encoding--remove",
+              "value": "gzip"
+            },
+            {
+              "key": "x-netfree--transfer--encoding--remove",
+              "value": "chunked"
+            },
+            {
+              "key": "x-netfree-careful-content-charset",
+              "value": "utf8"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"data\": [\n        {\n            \"isPinned\": false,\n            \"createdDate\": \"2019-08-25T12:45:44.000Z\",\n            \"clientLastName\": \"Hr\",\n            \"id\": \"00T4E00000DT3HXUA1\",\n            \"activityDate\": \"2019-08-25\",\n            \"desc\": \"\u05e9\u05d3\u05db\u05d3\u05e9\u05db\",\n            \"ownerLastName\": \"Dev\",\n            \"reminderLabel\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"store\": \"Houston - River Oaks District\",\n            \"isReminderSet\": false,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"subject\": \"\u05e7\u05d3\u05d088\",\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"ownerFirstName\": \"Balink\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"createdById\": \"0052p000008MZmNAAW\",\n            \"clientFirstName\": \"Mk\"\n        }\n    ],\n    \"text\": \"Success\"\n}"
+        }
+      ]
+    },
+    {
       "name": "Delete Activities",
       "_postman_id": "c00f2fd9-de72-4b51-870a-51a95aecac66",
       "protocolProfileBehavior": {
@@ -1444,135 +1573,6 @@
           "cookie": [],
           "responseTime": null,
           "body": "true"
-        }
-      ]
-    },
-    {
-      "name": "Add Activity",
-      "_postman_id": "9f01eef7-7d62-4d4b-b1d9-170d92092434",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer {{access_token}}"
-          },
-          {
-            "key": "Accept",
-            "value": "application/json"
-          },
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"items\": [\n        {\n            \"ownerId\": \"0052p000008MZmN\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"giftImage\": null,\n            \"taskType\": null,\n            \"createdById\": null,\n            \"createdBySM\": null,\n            \"desc\": \"\u05e9\u05d3\u05db\u05d3\u05e9\u05db\",\n            \"subject\": \"\u05e7\u05d3\u05d088\",\n            \"allDayEvent\": 0,\n            \"id\": null,\n            \"activityDate\": \"2019-08-25T15:45:23.148+0300\",\n            \"ownerFirstName\": null,\n            \"activityType\": \"Task\",\n            \"ownerLastName\": null,\n            \"status\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"isPinned\": 0,\n            \"isReminderSet\": 0,\n            \"outreachType\": null,\n            \"gift\": null,\n            \"location\": null,\n            \"reminderLabel\": null,\n            \"reminder\": null,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"store\": null\n        }\n    ],\n    \"objectName\": \"Task\"\n}"
-        },
-        "url": "{{instance_url}}/services/apexrest/retail/activities"
-      },
-      "response": [
-        {
-          "id": "9cd48b8e-7130-4874-b1c6-e395f1f3e3eb",
-          "name": "Add Activity  Success Example",
-          "originalRequest": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{access_token}}"
-              },
-              {
-                "key": "Accept",
-                "value": "application/json"
-              },
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"items\": [\n        {\n            \"ownerId\": \"0052p000008MZmN\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"giftImage\": null,\n            \"taskType\": null,\n            \"createdById\": null,\n            \"createdBySM\": null,\n            \"desc\": \"\u05e9\u05d3\u05db\u05d3\u05e9\u05db\",\n            \"subject\": \"\u05e7\u05d3\u05d088\",\n            \"allDayEvent\": 0,\n            \"id\": null,\n            \"activityDate\": \"2019-08-25T15:45:23.148+0300\",\n            \"ownerFirstName\": null,\n            \"activityType\": \"Task\",\n            \"ownerLastName\": null,\n            \"status\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"isPinned\": 0,\n            \"isReminderSet\": 0,\n            \"outreachType\": null,\n            \"gift\": null,\n            \"location\": null,\n            \"reminderLabel\": null,\n            \"reminder\": null,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"store\": null\n        }\n    ],\n    \"objectName\": \"Task\"\n}"
-            },
-            "url": "{{instance_url}}/services/apexrest/retail/activities"
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Date",
-              "value": "Sun, 25 Aug 2019 12:45:43 GMT"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=31536002; includeSubDomains"
-            },
-            {
-              "key": "Public-Key-Pins-Report-Only",
-              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
-            },
-            {
-              "key": "Expect-CT",
-              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-XSS-Protection",
-              "value": "1; mode=block"
-            },
-            {
-              "key": "X-Robots-Tag",
-              "value": "none"
-            },
-            {
-              "key": "Cache-Control",
-              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Vary",
-              "value": "Accept-Encoding"
-            },
-            {
-              "key": "x-netfree--content--encoding--remove",
-              "value": "gzip"
-            },
-            {
-              "key": "x-netfree--transfer--encoding--remove",
-              "value": "chunked"
-            },
-            {
-              "key": "x-netfree-careful-content-charset",
-              "value": "utf8"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            }
-          ],
-          "cookie": [],
-          "responseTime": null,
-          "body": "{\n    \"data\": [\n        {\n            \"isPinned\": false,\n            \"createdDate\": \"2019-08-25T12:45:44.000Z\",\n            \"clientLastName\": \"Hr\",\n            \"id\": \"00T4E00000DT3HXUA1\",\n            \"activityDate\": \"2019-08-25\",\n            \"desc\": \"\u05e9\u05d3\u05db\u05d3\u05e9\u05db\",\n            \"ownerLastName\": \"Dev\",\n            \"reminderLabel\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"store\": \"Houston - River Oaks District\",\n            \"isReminderSet\": false,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"subject\": \"\u05e7\u05d3\u05d088\",\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"ownerFirstName\": \"Balink\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"createdById\": \"0052p000008MZmNAAW\",\n            \"clientFirstName\": \"Mk\"\n        }\n    ],\n    \"text\": \"Success\"\n}"
         }
       ]
     },
