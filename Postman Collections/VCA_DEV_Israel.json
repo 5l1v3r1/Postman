@@ -1379,6 +1379,11 @@
       "_postman_id": "7be76359-02c0-4130-840c-60e4a31bb5a1"
     },
     {
+      "name": "Client",
+      "item": [],
+      "_postman_id": "ed3b17b8-6b85-4ecb-a3c4-7ae65bcd4c02"
+    },
+    {
       "name": "Get ClientDetails",
       "event": [
         {
