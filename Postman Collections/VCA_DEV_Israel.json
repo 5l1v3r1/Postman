@@ -7,84 +7,85 @@
   "item": [
     {
       "name": "Login",
-      "item": [],
-      "_postman_id": "1d02e903-ae5d-447b-8a23-96eb87543a81"
-    },
-    {
-      "name": "Login",
-      "event": [
+      "item": [
         {
-          "listen": "test",
-          "script": {
-            "id": "ce6e3261-b654-463e-ac25-dfff273b106f",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "postman.setEnvironmentVariable(\"access_token\", jsonData.access_token)",
-              "postman.setEnvironmentVariable(\"instance_url\", jsonData.instance_url)",
-              "postman.setEnvironmentVariable(\"user_id\", jsonData.id.split('/')[jsonData.id.split('/').length - 1]);"
-            ],
-            "type": "text/javascript"
-          }
-        },
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "3bf202f6-1176-4ba7-ba43-792991f83a31",
-            "exec": [
-              "//abc"
-            ],
-            "type": "text/javascript"
-          }
+          "name": "Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "ce6e3261-b654-463e-ac25-dfff273b106f",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"access_token\", jsonData.access_token)",
+                  "postman.setEnvironmentVariable(\"instance_url\", jsonData.instance_url)",
+                  "postman.setEnvironmentVariable(\"user_id\", jsonData.id.split('/')[jsonData.id.split('/').length - 1]);"
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "3bf202f6-1176-4ba7-ba43-792991f83a31",
+                "exec": [
+                  "//abc"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "8c5e05a7-e33f-4d21-8317-6426867b1dde",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://{{env}}/services/oauth2/token?grant_type=password&client_id={{app_client_id}}&client_secret={{app_client_secret}}&username={{username}}&password={{password}}",
+              "protocol": "https",
+              "host": [
+                "{{env}}"
+              ],
+              "path": [
+                "services",
+                "oauth2",
+                "token"
+              ],
+              "query": [
+                {
+                  "key": "grant_type",
+                  "value": "password"
+                },
+                {
+                  "key": "client_id",
+                  "value": "{{app_client_id}}"
+                },
+                {
+                  "key": "client_secret",
+                  "value": "{{app_client_secret}}"
+                },
+                {
+                  "key": "username",
+                  "value": "{{username}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{password}}"
+                },
+                {
+                  "key": "test",
+                  "value": "paream",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
-      "_postman_id": "8c5e05a7-e33f-4d21-8317-6426867b1dde",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [],
-        "url": {
-          "raw": "https://{{env}}/services/oauth2/token?grant_type=password&client_id={{app_client_id}}&client_secret={{app_client_secret}}&username={{username}}&password={{password}}",
-          "protocol": "https",
-          "host": [
-            "{{env}}"
-          ],
-          "path": [
-            "services",
-            "oauth2",
-            "token"
-          ],
-          "query": [
-            {
-              "key": "grant_type",
-              "value": "password"
-            },
-            {
-              "key": "client_id",
-              "value": "{{app_client_id}}"
-            },
-            {
-              "key": "client_secret",
-              "value": "{{app_client_secret}}"
-            },
-            {
-              "key": "username",
-              "value": "{{username}}"
-            },
-            {
-              "key": "password",
-              "value": "{{password}}"
-            },
-            {
-              "key": "test",
-              "value": "paream",
-              "disabled": true
-            }
-          ]
-        }
-      },
-      "response": []
+      "_postman_id": "1d02e903-ae5d-447b-8a23-96eb87543a81"
     },
     {
       "name": "Get Config",
