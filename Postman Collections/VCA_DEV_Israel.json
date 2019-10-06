@@ -1045,156 +1045,6 @@
               "body": "{\n    \"data\": [\n        {\n            \"CreatedById\": \"0052p000008MZmNAAW\",\n            \"title\": \"N-0108\",\n            \"client\": \"0014E000011kJ0cQAE\",\n            \"description\": \"Test Add Note\",\n            \"date\": \"2019-09-03T08:30:42.000Z\",\n            \"id\": \"a024E000005aSBCQA2\"\n        }\n    ],\n    \"text\": \"Success\"\n}"
             }
           ]
-        },
-        {
-          "name": "Delete Note",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "160d3b97-895c-4f72-bcc7-79f0946ec44a",
-                "exec": [
-                  "pm.test(\"Record deleted\", function () {",
-                  "    var jsonData = pm.response.json();",
-                  "    pm.expect(pm.response.json()).to.be.true;",
-                  "});",
-                  "",
-                  "",
-                  "",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "5d5eb6d6-c335-43f8-b8ce-d7939ad68b78",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{access_token}}"
-              },
-              {
-                "key": "Accept",
-                "value": "application/json"
-              }
-            ],
-            "url": {
-              "raw": "{{instance_url}}/services/apexrest/retail/notes?id={{note_id}}",
-              "host": [
-                "{{instance_url}}"
-              ],
-              "path": [
-                "services",
-                "apexrest",
-                "retail",
-                "notes"
-              ],
-              "query": [
-                {
-                  "key": "id",
-                  "value": "{{note_id}}"
-                }
-              ]
-            }
-          },
-          "response": [
-            {
-              "id": "edb25701-3141-4606-83ff-95c1b9141700",
-              "name": "Delete Note Success Example",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{access_token}}"
-                  },
-                  {
-                    "key": "Accept",
-                    "value": "application/json"
-                  }
-                ],
-                "url": {
-                  "raw": "{{instance_url}}/services/apexrest/retail/notes?id=a024E000005RskbQAC",
-                  "host": [
-                    "{{instance_url}}"
-                  ],
-                  "path": [
-                    "services",
-                    "apexrest",
-                    "retail",
-                    "notes"
-                  ],
-                  "query": [
-                    {
-                      "key": "id",
-                      "value": "a024E000005RskbQAC"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Date",
-                  "value": "Sun, 25 Aug 2019 11:30:18 GMT"
-                },
-                {
-                  "key": "Strict-Transport-Security",
-                  "value": "max-age=31536002; includeSubDomains"
-                },
-                {
-                  "key": "Public-Key-Pins-Report-Only",
-                  "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
-                },
-                {
-                  "key": "Expect-CT",
-                  "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Robots-Tag",
-                  "value": "none"
-                },
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache,must-revalidate,max-age=0,no-store,private"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "x-netfree-careful-content-charset",
-                  "value": "utf8"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "true"
-            }
-          ]
         }
       ],
       "_postman_id": "7be76359-02c0-4130-840c-60e4a31bb5a1"
@@ -1373,6 +1223,156 @@
           "cookie": [],
           "responseTime": null,
           "body": "{\n    \"wishlists\": [],\n    \"notes\": [],\n    \"timelineItems\": [\n        {\n            \"isPinned\": false,\n            \"createdDate\": \"2019-08-22T15:24:43.000Z\",\n            \"clientLastName\": \"Hr\",\n            \"id\": \"00T4E00000DSxdOUAT\",\n            \"activityDate\": \"2019-08-22\",\n            \"ownerLastName\": \"VCA\",\n            \"outreachType\": \"Email\",\n            \"reminderLabel\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"store\": \"Paris \u2013 20 Vend\u00f4me\",\n            \"isReminderSet\": false,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"status\": \"Completed\",\n            \"subject\": \"Email: Van Cleef & Arpels shared a product with you (mh@gmail.com)\",\n            \"ownerId\": \"0054E000004qbDFQAY\",\n            \"ownerFirstName\": \"Test\",\n            \"ownerId_LBL\": \"Test VCA\",\n            \"createdById\": \"0054E000004qbDFQAY\",\n            \"clientFirstName\": \"Mk\"\n        },\n        {\n            \"isPinned\": false,\n            \"createdDate\": \"2019-08-25T11:12:02.000Z\",\n            \"clientLastName\": \"Hr\",\n            \"id\": \"00T4E00000DT3GyUAL\",\n            \"activityDate\": \"2020-08-25\",\n            \"desc\": \"Asfasfasfafs\",\n            \"ownerLastName\": \"Dev\",\n            \"reminderLabel\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"store\": \"Houston - River Oaks District\",\n            \"isReminderSet\": false,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"subject\": \"Test44\",\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"ownerFirstName\": \"Balink\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"createdById\": \"0052p000008MZmNAAW\",\n            \"clientFirstName\": \"Mk\"\n        }\n    ],\n    \"purchases\": [\n        {\n            \"transactionDate\": \"2019-05-05\",\n            \"productImagePath\": \"6/16/616275.png\",\n            \"productId\": \"01t4E000004iMEwQAM\",\n            \"gratuity\": \"N\",\n            \"storeName\": \"Paris \u2013 Rue de la Paix\",\n            \"articleReference\": \"VCARA43100\",\n            \"transactionType\": \"SALE\",\n            \"currency\": \"EUR\",\n            \"return\": \"N\",\n            \"giftFlag\": \"#\",\n            \"amount\": 12083.33,\n            \"amountOriginal\": 12083.33,\n            \"productFamily\": \"Jewelry\",\n            \"id\": \"a0K4E000002jNpHUAU\",\n            \"productName\": \"Vintage Alhambra long necklace, 20 motifs\"\n        },\n        {\n            \"transactionDate\": \"2019-05-05\",\n            \"productImagePath\": \"16/81/1681844.png\",\n            \"productId\": \"01t4E000004iMLcQAM\",\n            \"gratuity\": \"N\",\n            \"storeName\": \"Paris \u2013 Rue de la Paix\",\n            \"articleReference\": \"VCARP34900\",\n            \"transactionType\": \"SALE\",\n            \"currency\": \"EUR\",\n            \"return\": \"N\",\n            \"giftFlag\": \"#\",\n            \"amount\": 3458.33,\n            \"amountOriginal\": 3458.33,\n            \"productFamily\": \"Jewelry\",\n            \"id\": \"a0K4E000002jNpJUAU\",\n            \"productName\": \"Vintage Alhambra bracelet, 5 motifs\"\n        },\n        {\n            \"transactionDate\": \"2019-05-05\",\n            \"productImagePath\": \"16/81/1681857.png\",\n            \"productId\": \"01t4E000004iMLbQAM\",\n            \"gratuity\": \"N\",\n            \"storeName\": \"Paris \u2013 Rue de la Paix\",\n            \"articleReference\": \"VCARP34800\",\n            \"transactionType\": \"SALE\",\n            \"currency\": \"EUR\",\n            \"return\": \"N\",\n            \"giftFlag\": \"#\",\n            \"amount\": 6875,\n            \"amountOriginal\": 6875,\n            \"productFamily\": \"Jewelry\",\n            \"id\": \"a0K4E000002jNpIUAU\",\n            \"productName\": \"Vintage Alhambra necklace, 10 motifs\"\n        }\n    ],\n    \"clientFields\": {\n        \"lastModifiedDate\": \"2019-08-22T17:49:08.000Z\",\n        \"email\": \"mh@gmail.com\",\n        \"addr5\": \"#\",\n        \"addr1\": \"2 Portofino Dr Ste 503\",\n        \"turnover\": 22416.66,\n        \"turnoverOriginal\": 22416.66,\n        \"addr2\": \"Gulf Breeze FL  32561-2502\",\n        \"storeName\": \"Paris \u2013 20 Vend\u00f4me\",\n        \"addr3\": \"USA\",\n        \"language\": \"English\",\n        \"storeCode\": \"1301\",\n        \"lastTransactionDate\": \"2019-06-04\",\n        \"segmentLabel\": \"NEW ****\",\n        \"segment\": \"NEW ****\",\n        \"firstName\": \"Mk\",\n        \"isContactableLabel\": \"Yes\",\n        \"isContactable\": \"Yes\",\n        \"businessPartner\": \"29596267\",\n        \"lastName\": \"Hr\",\n        \"mobile\": \"+1234567899\",\n        \"nationality\": \"American\",\n        \"addr4\": \"#\",\n        \"ownerName\": \"Balink Dev\",\n        \"id\": \"0014E000011kJ0cQAE\",\n        \"gender\": \"Male\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"age\": \"53\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete Note",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "160d3b97-895c-4f72-bcc7-79f0946ec44a",
+            "exec": [
+              "pm.test(\"Record deleted\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(pm.response.json()).to.be.true;",
+              "});",
+              "",
+              "",
+              "",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "5d5eb6d6-c335-43f8-b8ce-d7939ad68b78",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{instance_url}}/services/apexrest/retail/notes?id={{note_id}}",
+          "host": [
+            "{{instance_url}}"
+          ],
+          "path": [
+            "services",
+            "apexrest",
+            "retail",
+            "notes"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "{{note_id}}"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "edb25701-3141-4606-83ff-95c1b9141700",
+          "name": "Delete Note Success Example",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{instance_url}}/services/apexrest/retail/notes?id=a024E000005RskbQAC",
+              "host": [
+                "{{instance_url}}"
+              ],
+              "path": [
+                "services",
+                "apexrest",
+                "retail",
+                "notes"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "a024E000005RskbQAC"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 25 Aug 2019 11:30:18 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536002; includeSubDomains"
+            },
+            {
+              "key": "Public-Key-Pins-Report-Only",
+              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "Expect-CT",
+              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Robots-Tag",
+              "value": "none"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "x-netfree-careful-content-charset",
+              "value": "utf8"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "true"
         }
       ]
     },
