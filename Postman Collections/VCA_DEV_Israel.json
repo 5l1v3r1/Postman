@@ -457,6 +457,185 @@
               "body": "{\n    \"documents\": {\n        \"a044E00000D1ux1QAB\": {\n            \"parentId\": \"a044E00000D1ux1QAB\",\n            \"docId\": \"0684E000000Tfn8QAC\",\n            \"docTitle\": \"bitmap@2x\",\n            \"docExtension\": \"png\"\n        },\n        \"a044E00000D1uwwQAB\": {\n            \"parentId\": \"a044E00000D1uwwQAB\",\n            \"docId\": \"0684E000000Tfn3QAC\",\n            \"docTitle\": \"bitmap@2x\",\n            \"docExtension\": \"png\"\n        },\n        \"a044E00000D1uwsQAB\": {\n            \"parentId\": \"a044E00000D1uwsQAB\",\n            \"docId\": \"0684E000000QzaYQAS\",\n            \"docTitle\": \"anniversary@2x\",\n            \"docExtension\": \"png\"\n        },\n        \"a044E00000D1uwrQAB\": {\n            \"parentId\": \"a044E00000D1uwrQAB\",\n            \"docId\": \"0684E000000QvCfQAK\",\n            \"docTitle\": \"anniversary\",\n            \"docExtension\": \"png\"\n        },\n        \"a044E00000D1uwcQAB\": {\n            \"parentId\": \"a044E00000D1uwcQAB\",\n            \"docId\": \"0684E000000TcmYQAS\",\n            \"docTitle\": \"bitmap@2x\",\n            \"docExtension\": \"png\"\n        },\n        \"a044E00000D1uWMQAZ\": {\n            \"parentId\": \"a044E00000D1uWMQAZ\",\n            \"docId\": \"0684E000000RExbQAG\",\n            \"docTitle\": \"client list\",\n            \"docExtension\": \"png\"\n        }\n    },\n    \"clientLists\": [\n        {\n            \"type\": null,\n            \"position\": 6,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"TOP 200\",\n            \"listDescription\": \"My Top 200 Clients\",\n            \"isSpecial\": false,\n            \"id\": \"a044E00000D1ux1QAB\",\n            \"displayType\": null,\n            \"createdDate\": \"2019-05-16\",\n            \"clientIds\": [\n                \"0014E000013rN2bQAE\",\n                \"0014E000011kJ0pQAE\",\n                \"0014E000011kJ17QAE\",\n                \"0014E000011kJ0kQAE\",\n                \"0014E000011kJ0MQAU\",\n                \"0014E000011kJ19QAE\",\n                \"0014E000011kJ15QAE\",\n                \"0014E000011kJ1EQAU\",\n                \"0014E000011kJ1RQAU\",\n                \"0014E000011kJ4eQAE\",\n                \"0014E000011kJ1NQAU\",\n                \"0014E000011kJ4fQAE\",\n                \"0014E000011kJ4cQAE\",\n                \"0014E000011kJ1PQAU\",\n                \"0014E000011kJ1GQAU\",\n                \"0014E000011kJ14QAE\",\n                \"0014E000011kJ0SQAU\",\n                \"0014E000011kJ18QAE\",\n                \"0014E000011kJ4dQAE\",\n                \"0014E000011kJ07QAE\",\n                \"0014E000011kJ1KQAU\",\n                \"0014E000011kJ1QQAU\",\n                \"0014E000011kJ0oQAE\",\n                \"0014E000011kJ12QAE\",\n                \"0014E000011kJ1TQAU\",\n                \"0014E000011kJ0iQAE\",\n                \"0014E000011kJ0LQAU\",\n                \"0014E000011kJ0hQAE\",\n                \"0014E000011kJ0cQAE\",\n                \"0014E000011kJ34QAE\",\n                \"0014E000011kJ0HQAU\",\n                \"0014E000011kJ0NQAU\",\n                \"0014E000011kJ1VQAU\",\n                \"0014E000011kJ10QAE\",\n                \"0014E000011kJ4bQAE\",\n                \"0014E000011kJ08QAE\",\n                \"0014E000011kJ0tQAE\",\n                \"0014E000011kJ13QAE\",\n                \"0014E000011kJ0QQAU\",\n                \"0014E000011kJ38QAE\",\n                \"0014E000011kJ0eQAE\",\n                \"0014E000011kJ0UQAU\",\n                \"0014E000011kJ0WQAU\",\n                \"0014E000011kJ1CQAU\",\n                \"0014E000011kJ0lQAE\",\n                \"0014E000011kJ11QAE\",\n                \"0014E000011kJ0gQAE\",\n                \"0014E000011kJ1DQAU\",\n                \"0014E000011kJ37QAE\",\n                \"0014E000011kJ0wQAE\",\n                \"0014E000011kJ0DQAU\",\n                \"0014E000011kJ0XQAU\",\n                \"0014E000011kJ0YQAU\",\n                \"0014E000011kJ0TQAU\",\n                \"0014E000011kJ0sQAE\",\n                \"0014E000011kJ0ZQAU\",\n                \"0014E000011kJ1UQAU\",\n                \"0014E000011kJ1WQAU\",\n                \"0014E000011kJ09QAE\",\n                \"0014E000011kJ0mQAE\",\n                \"0014E000011kJ35QAE\",\n                \"0014E000011kJ0xQAE\",\n                \"0014E000011kJ0dQAE\",\n                \"0014E000011kJ0BQAU\",\n                \"0014E000011kJ0yQAE\",\n                \"0014E000011kJ0rQAE\",\n                \"0014E000011kJ0uQAE\",\n                \"0014E000011kJ0FQAU\",\n                \"0014E000011kJ0KQAU\",\n                \"0014E000011kJ0IQAU\",\n                \"0014E000011kJ0CQAU\",\n                \"0014E000011kJ36QAE\",\n                \"0014E000011kJ0JQAU\",\n                \"0014E000011kJ0jQAE\",\n                \"0014E000011kJ0EQAU\",\n                \"0014E000011kJ0AQAU\",\n                \"0014E000011kJ0zQAE\",\n                \"0014E000011kJ0vQAE\",\n                \"0014E000011kJ1IQAU\",\n                \"0014E000011kJ1HQAU\",\n                \"0014E000011kJ16QAE\",\n                \"0014E000011kJ0PQAU\",\n                \"0014E000011kJ1JQAU\",\n                \"0014E000011kJ0bQAE\",\n                \"0014E000011kJ1FQAU\",\n                \"0014E000011kJ1OQAU\",\n                \"0014E000011kJ05QAE\",\n                \"0014E000011kJ0GQAU\",\n                \"0014E000011kJ0OQAU\",\n                \"0014E000011kJ0RQAU\",\n                \"0014E000011kJ0VQAU\",\n                \"0014E000011kJ0aQAE\",\n                \"0014E000011kJ0fQAE\",\n                \"0014E000011kJ0nQAE\",\n                \"0014E000011kJ0qQAE\",\n                \"0014E000011kJ1AQAU\",\n                \"0014E000011kJ1LQAU\",\n                \"0014E000011kJ1MQAU\"\n            ],\n            \"ascendant\": false\n        },\n        {\n            \"type\": null,\n            \"position\": 1,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"WELCOME\",\n            \"listDescription\": \"My Welcome Clients\",\n            \"isSpecial\": true,\n            \"id\": \"a044E00000D1uWMQAZ\",\n            \"displayType\": \"firstPurchase\",\n            \"createdDate\": \"2019-05-15\",\n            \"clientIds\": [],\n            \"ascendant\": false\n        },\n        {\n            \"type\": null,\n            \"position\": 5,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"STAR CLIENTS\",\n            \"listDescription\": \"All The Star Clients\",\n            \"isSpecial\": false,\n            \"id\": \"a044E00000D1uwwQAB\",\n            \"displayType\": null,\n            \"createdDate\": \"2019-05-16\",\n            \"clientIds\": [\n                \"0014E000011kJ0MQAU\",\n                \"0014E000011kJ0kQAE\",\n                \"0014E000011kJ0pQAE\",\n                \"0014E000011kJ17QAE\",\n                \"0014E000011kJ19QAE\",\n                \"0014E000011kJ1EQAU\",\n                \"0014E000011kJ1NQAU\",\n                \"0014E000011kJ1RQAU\",\n                \"0014E000011kJ1TQAU\"\n            ],\n            \"ascendant\": false\n        },\n        {\n            \"type\": null,\n            \"position\": 2,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"BIRTHDAYS\",\n            \"listDescription\": \"Birthdays to wish : 1 month prior his birthday & 2 days after\",\n            \"isSpecial\": true,\n            \"id\": \"a044E00000D1uwcQAB\",\n            \"displayType\": \"birthday\",\n            \"createdDate\": \"2019-05-16\",\n            \"clientIds\": [\n                \"0014E000011kJ0DQAU\",\n                \"0014E000011kJ0wQAE\",\n                \"0014E000011kJ0zQAE\",\n                \"0014E000011kJ19QAE\",\n                \"0014E000011kJ4eQAE\",\n                \"0014E000011kJ4fQAE\"\n            ],\n            \"ascendant\": false\n        },\n        {\n            \"type\": null,\n            \"position\": 3,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"THANK YOU\",\n            \"listDescription\": \"Client who bought products in the last 4 weeks\",\n            \"isSpecial\": true,\n            \"id\": \"a044E00000D1uwsQAB\",\n            \"displayType\": null,\n            \"createdDate\": \"2019-05-16\",\n            \"clientIds\": [],\n            \"ascendant\": false\n        },\n        {\n            \"type\": null,\n            \"position\": 4,\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"orderBy\": null,\n            \"name\": \"PURCHASE ANNIVERSARY\",\n            \"listDescription\": \"Client without any transaction for the past 12 months.\",\n            \"isSpecial\": true,\n            \"id\": \"a044E00000D1uwrQAB\",\n            \"displayType\": null,\n            \"createdDate\": \"2019-05-16\",\n            \"clientIds\": [\n                \"0014E000011kJ07QAE\",\n                \"0014E000011kJ0IQAU\",\n                \"0014E000011kJ0iQAE\",\n                \"0014E000011kJ0rQAE\",\n                \"0014E000011kJ18QAE\",\n                \"0014E000011kJ36QAE\",\n                \"0014E000011kJ37QAE\"\n            ],\n            \"ascendant\": false\n        }\n    ]\n}"
             }
           ]
+        },
+        {
+          "name": "Get KPI",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "f8dfc495-b66c-44c7-898b-6f00b2d5875a",
+                "exec": [
+                  "// test change"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "493b1e63-681f-4d6d-b3a3-47a29613cc38",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"{{user_id}}\"]&period=y&getUpt=true&myStore=true",
+              "host": [
+                "{{instance_url}}"
+              ],
+              "path": [
+                "services",
+                "apexrest",
+                "retail",
+                "dashboard"
+              ],
+              "query": [
+                {
+                  "key": "userIds",
+                  "value": "[\"{{user_id}}\"]"
+                },
+                {
+                  "key": "period",
+                  "value": "y"
+                },
+                {
+                  "key": "getUpt",
+                  "value": "true"
+                },
+                {
+                  "key": "myStore",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "40ee0676-4dd6-4f1f-bea1-7cf8af97a9c2",
+              "name": "Get KPI Success Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{access_token}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"{{user_id}}\"]&period=y&getUpt=true&myStore=true",
+                  "host": [
+                    "{{instance_url}}"
+                  ],
+                  "path": [
+                    "services",
+                    "apexrest",
+                    "retail",
+                    "dashboard"
+                  ],
+                  "query": [
+                    {
+                      "key": "userIds",
+                      "value": "[\"{{user_id}}\"]"
+                    },
+                    {
+                      "key": "period",
+                      "value": "y"
+                    },
+                    {
+                      "key": "getUpt",
+                      "value": "true"
+                    },
+                    {
+                      "key": "myStore",
+                      "value": "true"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 25 Aug 2019 11:51:39 GMT"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536002; includeSubDomains"
+                },
+                {
+                  "key": "Public-Key-Pins-Report-Only",
+                  "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Robots-Tag",
+                  "value": "none"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-netfree--content--encoding--remove",
+                  "value": "gzip"
+                },
+                {
+                  "key": "x-netfree--transfer--encoding--remove",
+                  "value": "chunked"
+                },
+                {
+                  "key": "x-netfree-careful-content-charset",
+                  "value": "utf8"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"turnoverDataPrev\": {\n        \"average\": 49761.82,\n        \"transactions\": 113,\n        \"turnover\": 5623085.56\n    },\n    \"turnoverDataCurr\": {\n        \"average\": 9691.94,\n        \"transactions\": 89,\n        \"turnover\": 862582.54\n    },\n    \"contacted\": {\n        \"prev\": 0,\n        \"curr\": 25\n    },\n    \"segments\": [\n        {\n            \"name\": \"NEW *\",\n            \"contactedPercentage\": 14,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 7,\n            \"clientsCount\": 7\n        },\n        {\n            \"name\": \"NEW **\",\n            \"contactedPercentage\": 40,\n            \"contacted\": 2,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"NEW ***\",\n            \"contactedPercentage\": 0,\n            \"contacted\": 0,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"NEW ****\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 2,\n            \"clientsCount\": 2\n        },\n        {\n            \"name\": \"STAR (NEW)\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 2,\n            \"clientsCount\": 2\n        },\n        {\n            \"name\": \"LOYAL *\",\n            \"contactedPercentage\": 11,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 9,\n            \"clientsCount\": 9\n        },\n        {\n            \"name\": \"LOYAL **\",\n            \"contactedPercentage\": 12,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 8,\n            \"clientsCount\": 8\n        },\n        {\n            \"name\": \"LOYAL ***\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 3,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"LOYAL ****\",\n            \"contactedPercentage\": 20,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"STAR (LOYAL)\",\n            \"contactedPercentage\": 100,\n            \"contacted\": 5,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"ACTIVE *\",\n            \"contactedPercentage\": 11,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 9,\n            \"clientsCount\": 9\n        },\n        {\n            \"name\": \"ACTIVE **\",\n            \"contactedPercentage\": 20,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"ACTIVE ***\",\n            \"contactedPercentage\": 40,\n            \"contacted\": 2,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"STAR (ACTIVE)\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 2,\n            \"clientsCount\": 2\n        },\n        {\n            \"name\": \"SLEEPER *\",\n            \"contactedPercentage\": 17,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"SLEEPER **\",\n            \"contactedPercentage\": 40,\n            \"contacted\": 2,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"SLEEPER ****\",\n            \"contactedPercentage\": 0,\n            \"contacted\": 0,\n            \"clientsCountPercentage\": 4,\n            \"clientsCount\": 4\n        },\n        {\n            \"name\": \"PROSPECT\",\n            \"contactedPercentage\": 17,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"others\",\n            \"contactedPercentage\": 0,\n            \"contacted\": 0,\n            \"clientsCountPercentage\": 1,\n            \"clientsCount\": 1\n        },\n        {\n            \"name\": \"total\",\n            \"contactedPercentage\": 26,\n            \"contacted\": 25,\n            \"clientsCountPercentage\": 100,\n            \"clientsCount\": 98\n        }\n    ]\n}"
+            }
+          ]
         }
       ],
       "_postman_id": "83d141f7-8d6d-454b-8ae4-79744c37750d"
@@ -1373,185 +1552,6 @@
           "cookie": [],
           "responseTime": null,
           "body": "{\n    \"wishlists\": [],\n    \"notes\": [],\n    \"timelineItems\": [\n        {\n            \"isPinned\": false,\n            \"createdDate\": \"2019-08-22T15:24:43.000Z\",\n            \"clientLastName\": \"Hr\",\n            \"id\": \"00T4E00000DSxdOUAT\",\n            \"activityDate\": \"2019-08-22\",\n            \"ownerLastName\": \"VCA\",\n            \"outreachType\": \"Email\",\n            \"reminderLabel\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"store\": \"Paris \u2013 20 Vend\u00f4me\",\n            \"isReminderSet\": false,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"status\": \"Completed\",\n            \"subject\": \"Email: Van Cleef & Arpels shared a product with you (mh@gmail.com)\",\n            \"ownerId\": \"0054E000004qbDFQAY\",\n            \"ownerFirstName\": \"Test\",\n            \"ownerId_LBL\": \"Test VCA\",\n            \"createdById\": \"0054E000004qbDFQAY\",\n            \"clientFirstName\": \"Mk\"\n        },\n        {\n            \"isPinned\": false,\n            \"createdDate\": \"2019-08-25T11:12:02.000Z\",\n            \"clientLastName\": \"Hr\",\n            \"id\": \"00T4E00000DT3GyUAL\",\n            \"activityDate\": \"2020-08-25\",\n            \"desc\": \"Asfasfasfafs\",\n            \"ownerLastName\": \"Dev\",\n            \"reminderLabel\": null,\n            \"clientId_LBL\": \"Mk Hr\",\n            \"store\": \"Houston - River Oaks District\",\n            \"isReminderSet\": false,\n            \"priority\": \"Normal\",\n            \"clientId\": \"0014E000011kJ0cQAE\",\n            \"subject\": \"Test44\",\n            \"ownerId\": \"0052p000008MZmNAAW\",\n            \"ownerFirstName\": \"Balink\",\n            \"ownerId_LBL\": \"Balink Dev\",\n            \"createdById\": \"0052p000008MZmNAAW\",\n            \"clientFirstName\": \"Mk\"\n        }\n    ],\n    \"purchases\": [\n        {\n            \"transactionDate\": \"2019-05-05\",\n            \"productImagePath\": \"6/16/616275.png\",\n            \"productId\": \"01t4E000004iMEwQAM\",\n            \"gratuity\": \"N\",\n            \"storeName\": \"Paris \u2013 Rue de la Paix\",\n            \"articleReference\": \"VCARA43100\",\n            \"transactionType\": \"SALE\",\n            \"currency\": \"EUR\",\n            \"return\": \"N\",\n            \"giftFlag\": \"#\",\n            \"amount\": 12083.33,\n            \"amountOriginal\": 12083.33,\n            \"productFamily\": \"Jewelry\",\n            \"id\": \"a0K4E000002jNpHUAU\",\n            \"productName\": \"Vintage Alhambra long necklace, 20 motifs\"\n        },\n        {\n            \"transactionDate\": \"2019-05-05\",\n            \"productImagePath\": \"16/81/1681844.png\",\n            \"productId\": \"01t4E000004iMLcQAM\",\n            \"gratuity\": \"N\",\n            \"storeName\": \"Paris \u2013 Rue de la Paix\",\n            \"articleReference\": \"VCARP34900\",\n            \"transactionType\": \"SALE\",\n            \"currency\": \"EUR\",\n            \"return\": \"N\",\n            \"giftFlag\": \"#\",\n            \"amount\": 3458.33,\n            \"amountOriginal\": 3458.33,\n            \"productFamily\": \"Jewelry\",\n            \"id\": \"a0K4E000002jNpJUAU\",\n            \"productName\": \"Vintage Alhambra bracelet, 5 motifs\"\n        },\n        {\n            \"transactionDate\": \"2019-05-05\",\n            \"productImagePath\": \"16/81/1681857.png\",\n            \"productId\": \"01t4E000004iMLbQAM\",\n            \"gratuity\": \"N\",\n            \"storeName\": \"Paris \u2013 Rue de la Paix\",\n            \"articleReference\": \"VCARP34800\",\n            \"transactionType\": \"SALE\",\n            \"currency\": \"EUR\",\n            \"return\": \"N\",\n            \"giftFlag\": \"#\",\n            \"amount\": 6875,\n            \"amountOriginal\": 6875,\n            \"productFamily\": \"Jewelry\",\n            \"id\": \"a0K4E000002jNpIUAU\",\n            \"productName\": \"Vintage Alhambra necklace, 10 motifs\"\n        }\n    ],\n    \"clientFields\": {\n        \"lastModifiedDate\": \"2019-08-22T17:49:08.000Z\",\n        \"email\": \"mh@gmail.com\",\n        \"addr5\": \"#\",\n        \"addr1\": \"2 Portofino Dr Ste 503\",\n        \"turnover\": 22416.66,\n        \"turnoverOriginal\": 22416.66,\n        \"addr2\": \"Gulf Breeze FL  32561-2502\",\n        \"storeName\": \"Paris \u2013 20 Vend\u00f4me\",\n        \"addr3\": \"USA\",\n        \"language\": \"English\",\n        \"storeCode\": \"1301\",\n        \"lastTransactionDate\": \"2019-06-04\",\n        \"segmentLabel\": \"NEW ****\",\n        \"segment\": \"NEW ****\",\n        \"firstName\": \"Mk\",\n        \"isContactableLabel\": \"Yes\",\n        \"isContactable\": \"Yes\",\n        \"businessPartner\": \"29596267\",\n        \"lastName\": \"Hr\",\n        \"mobile\": \"+1234567899\",\n        \"nationality\": \"American\",\n        \"addr4\": \"#\",\n        \"ownerName\": \"Balink Dev\",\n        \"id\": \"0014E000011kJ0cQAE\",\n        \"gender\": \"Male\",\n        \"ownerId\": \"0052p000008MZmNAAW\",\n        \"age\": \"53\"\n    }\n}"
-        }
-      ]
-    },
-    {
-      "name": "Get KPI",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "f8dfc495-b66c-44c7-898b-6f00b2d5875a",
-            "exec": [
-              "// test change"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "_postman_id": "493b1e63-681f-4d6d-b3a3-47a29613cc38",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer {{access_token}}"
-          },
-          {
-            "key": "Accept",
-            "value": "application/json"
-          }
-        ],
-        "url": {
-          "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"{{user_id}}\"]&period=y&getUpt=true&myStore=true",
-          "host": [
-            "{{instance_url}}"
-          ],
-          "path": [
-            "services",
-            "apexrest",
-            "retail",
-            "dashboard"
-          ],
-          "query": [
-            {
-              "key": "userIds",
-              "value": "[\"{{user_id}}\"]"
-            },
-            {
-              "key": "period",
-              "value": "y"
-            },
-            {
-              "key": "getUpt",
-              "value": "true"
-            },
-            {
-              "key": "myStore",
-              "value": "true"
-            }
-          ]
-        }
-      },
-      "response": [
-        {
-          "id": "40ee0676-4dd6-4f1f-bea1-7cf8af97a9c2",
-          "name": "Get KPI Success Example",
-          "originalRequest": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{access_token}}"
-              },
-              {
-                "key": "Accept",
-                "value": "application/json"
-              }
-            ],
-            "url": {
-              "raw": "{{instance_url}}/services/apexrest/retail/dashboard?userIds=[\"{{user_id}}\"]&period=y&getUpt=true&myStore=true",
-              "host": [
-                "{{instance_url}}"
-              ],
-              "path": [
-                "services",
-                "apexrest",
-                "retail",
-                "dashboard"
-              ],
-              "query": [
-                {
-                  "key": "userIds",
-                  "value": "[\"{{user_id}}\"]"
-                },
-                {
-                  "key": "period",
-                  "value": "y"
-                },
-                {
-                  "key": "getUpt",
-                  "value": "true"
-                },
-                {
-                  "key": "myStore",
-                  "value": "true"
-                }
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Date",
-              "value": "Sun, 25 Aug 2019 11:51:39 GMT"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=31536002; includeSubDomains"
-            },
-            {
-              "key": "Public-Key-Pins-Report-Only",
-              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
-            },
-            {
-              "key": "Expect-CT",
-              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-XSS-Protection",
-              "value": "1; mode=block"
-            },
-            {
-              "key": "X-Robots-Tag",
-              "value": "none"
-            },
-            {
-              "key": "Cache-Control",
-              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Vary",
-              "value": "Accept-Encoding"
-            },
-            {
-              "key": "x-netfree--content--encoding--remove",
-              "value": "gzip"
-            },
-            {
-              "key": "x-netfree--transfer--encoding--remove",
-              "value": "chunked"
-            },
-            {
-              "key": "x-netfree-careful-content-charset",
-              "value": "utf8"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
-            }
-          ],
-          "cookie": [],
-          "responseTime": null,
-          "body": "{\n    \"turnoverDataPrev\": {\n        \"average\": 49761.82,\n        \"transactions\": 113,\n        \"turnover\": 5623085.56\n    },\n    \"turnoverDataCurr\": {\n        \"average\": 9691.94,\n        \"transactions\": 89,\n        \"turnover\": 862582.54\n    },\n    \"contacted\": {\n        \"prev\": 0,\n        \"curr\": 25\n    },\n    \"segments\": [\n        {\n            \"name\": \"NEW *\",\n            \"contactedPercentage\": 14,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 7,\n            \"clientsCount\": 7\n        },\n        {\n            \"name\": \"NEW **\",\n            \"contactedPercentage\": 40,\n            \"contacted\": 2,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"NEW ***\",\n            \"contactedPercentage\": 0,\n            \"contacted\": 0,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"NEW ****\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 2,\n            \"clientsCount\": 2\n        },\n        {\n            \"name\": \"STAR (NEW)\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 2,\n            \"clientsCount\": 2\n        },\n        {\n            \"name\": \"LOYAL *\",\n            \"contactedPercentage\": 11,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 9,\n            \"clientsCount\": 9\n        },\n        {\n            \"name\": \"LOYAL **\",\n            \"contactedPercentage\": 12,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 8,\n            \"clientsCount\": 8\n        },\n        {\n            \"name\": \"LOYAL ***\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 3,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"LOYAL ****\",\n            \"contactedPercentage\": 20,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"STAR (LOYAL)\",\n            \"contactedPercentage\": 100,\n            \"contacted\": 5,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"ACTIVE *\",\n            \"contactedPercentage\": 11,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 9,\n            \"clientsCount\": 9\n        },\n        {\n            \"name\": \"ACTIVE **\",\n            \"contactedPercentage\": 20,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"ACTIVE ***\",\n            \"contactedPercentage\": 40,\n            \"contacted\": 2,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"STAR (ACTIVE)\",\n            \"contactedPercentage\": 50,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 2,\n            \"clientsCount\": 2\n        },\n        {\n            \"name\": \"SLEEPER *\",\n            \"contactedPercentage\": 17,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"SLEEPER **\",\n            \"contactedPercentage\": 40,\n            \"contacted\": 2,\n            \"clientsCountPercentage\": 5,\n            \"clientsCount\": 5\n        },\n        {\n            \"name\": \"SLEEPER ****\",\n            \"contactedPercentage\": 0,\n            \"contacted\": 0,\n            \"clientsCountPercentage\": 4,\n            \"clientsCount\": 4\n        },\n        {\n            \"name\": \"PROSPECT\",\n            \"contactedPercentage\": 17,\n            \"contacted\": 1,\n            \"clientsCountPercentage\": 6,\n            \"clientsCount\": 6\n        },\n        {\n            \"name\": \"others\",\n            \"contactedPercentage\": 0,\n            \"contacted\": 0,\n            \"clientsCountPercentage\": 1,\n            \"clientsCount\": 1\n        },\n        {\n            \"name\": \"total\",\n            \"contactedPercentage\": 26,\n            \"contacted\": 25,\n            \"clientsCountPercentage\": 100,\n            \"clientsCount\": 98\n        }\n    ]\n}"
         }
       ]
     },
