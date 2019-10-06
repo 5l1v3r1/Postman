@@ -89,47 +89,27 @@
     },
     {
       "name": "General",
-      "item": [],
-      "_postman_id": "83d141f7-8d6d-454b-8ae4-79744c37750d"
-    },
-    {
-      "name": "Get Config",
-      "event": [
+      "item": [
         {
-          "listen": "prerequest",
-          "script": {
-            "id": "127ff374-15cb-4a8c-93b2-5608820f734b",
-            "exec": [
-              "//test",
-              "//12445"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "_postman_id": "13ececd3-4e92-45d0-b2d2-7633a4d53c86",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer {{access_token}}"
+          "name": "Get Config",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "127ff374-15cb-4a8c-93b2-5608820f734b",
+                "exec": [
+                  "//test",
+                  "//12445"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "13ececd3-4e92-45d0-b2d2-7633a4d53c86",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
           },
-          {
-            "key": "Accept",
-            "value": "application/json"
-          }
-        ],
-        "url": "{{instance_url}}/services/apexrest/retail/config"
-      },
-      "response": [
-        {
-          "id": "cbc86908-4fd8-4d8c-b0e6-c737ef433656",
-          "name": "Get Config Success Example",
-          "originalRequest": {
+          "request": {
             "method": "GET",
             "header": [
               {
@@ -143,76 +123,97 @@
             ],
             "url": "{{instance_url}}/services/apexrest/retail/config"
           },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
+          "response": [
             {
-              "key": "Date",
-              "value": "Sun, 25 Aug 2019 11:31:35 GMT"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=31536002; includeSubDomains"
-            },
-            {
-              "key": "Public-Key-Pins-Report-Only",
-              "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
-            },
-            {
-              "key": "Expect-CT",
-              "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-XSS-Protection",
-              "value": "1; mode=block"
-            },
-            {
-              "key": "X-Robots-Tag",
-              "value": "none"
-            },
-            {
-              "key": "Cache-Control",
-              "value": "no-cache,must-revalidate,max-age=0,no-store,private"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "key": "Vary",
-              "value": "Accept-Encoding"
-            },
-            {
-              "key": "x-netfree--content--encoding--remove",
-              "value": "gzip"
-            },
-            {
-              "key": "x-netfree--transfer--encoding--remove",
-              "value": "chunked"
-            },
-            {
-              "key": "x-netfree-careful-content-charset",
-              "value": "utf8"
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive"
-            },
-            {
-              "key": "Transfer-Encoding",
-              "value": "chunked"
+              "id": "cbc86908-4fd8-4d8c-b0e6-c737ef433656",
+              "name": "Get Config Success Example",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{access_token}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": "{{instance_url}}/services/apexrest/retail/config"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 25 Aug 2019 11:31:35 GMT"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536002; includeSubDomains"
+                },
+                {
+                  "key": "Public-Key-Pins-Report-Only",
+                  "value": "pin-sha256=\"9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY=\"; pin-sha256=\"5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=\"; pin-sha256=\"njN4rRG+22dNXAi+yb8e3UMypgzPUPHlv4+foULwl1g=\"; max-age=86400; includeSubDomains; report-uri=\"https://a.forcesslreports.com/hpkp-report/00D4E0000001fLdm\";"
+                },
+                {
+                  "key": "Expect-CT",
+                  "value": "max-age=86400; report-uri=\"https://a.forcesslreports.com/Expect-CT-report/00D4E0000001fLdm\";"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Robots-Tag",
+                  "value": "none"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache,must-revalidate,max-age=0,no-store,private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-netfree--content--encoding--remove",
+                  "value": "gzip"
+                },
+                {
+                  "key": "x-netfree--transfer--encoding--remove",
+                  "value": "chunked"
+                },
+                {
+                  "key": "x-netfree-careful-content-charset",
+                  "value": "utf8"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"userInfos\": {\n        \"imagePath\": \"https://mediastorage.richemont.com/damdatastore/QuA/vca/\",\n        \"storeName\": \"Houston - River Oaks District\",\n        \"priceIncludeTax\": true,\n        \"storeId\": \"a0R4E00000Du6CzUAJ\",\n        \"photoUrl\": \"https://vancleefarpels--retail--c.documentforce.com/profilephoto/7294E000000O5r8/F\",\n        \"id\": \"0052p000008MZmNAAW\",\n        \"currency\": \"EUR\",\n        \"lang\": \"en_US\",\n        \"email\": \"dev@balink.net\",\n        \"lastName\": \"Dev\",\n        \"storeCode\": \"3088\",\n        \"firstName\": \"Balink\",\n        \"name\": \"Balink Dev\"\n    },\n    \"SAs\": [],\n    \"queries\": [\n        {\n            \"id\": \"clientQuery\",\n            \"name\": \"Clients\",\n            \"query\": \"SELECT Is_Contactable__pc, toLabel(Is_Contactable__pc) isContactableLabel, Last_Sale_Date__pc, LastName, PersonMobilePhone, FirstName, Birthday_Month__pc, Segment__pc, PersonEmail, OwnerId, Turnover__pc, convertCurrency(Turnover__pc) Turnover__pcConverted, Id, Birthday_Year__pc, First_Sale_Date__pc, Birthday_Day__pc, LastContactedDate__c  FROM Account WHERE Id != ''  AND Main_Store__pr.Store_Code__c = '3088'\"\n        },\n        {\n            \"id\": \"productQuery\",\n            \"name\": \"Products\",\n            \"query\": \"SELECT COM_CLEANING_DESC__c, WBR_Interchangeable__c, WMF_Size__c, COM_Marketing_description__c, Id, COM_ENGRAVING_DESC__c, CRE_Collection_Product_Line__c, COM_THEMATIC__c, toLabel(COM_THEMATIC__c) thematicLabel, COM_TOTAL_CARATS_BY_GEM__c, Product_Family__c, WMO_Power_Reserve__c, WMO_Function_Type__c, Size_Adjustment_Value__c, WMF_Water_Resistant__c, COM_SPECIFIC_HIGHLIGHTS__c, CRE_SAP_Reference__c, Name, PIM_CRE_JMF_SIZE_INT__c, COM_SUB_COLLECTION__c, toLabel(COM_SUB_COLLECTION__c) subCollectionLabel, COM_REPLACEMENT_STONE_DESC__c, COM_size_adjustment__c, toLabel(COM_size_adjustment__c) sizeAdjustmentLabel, CRE_PRODUCT_TYPE__c, JMF_MAIN_MATERIAL__c, toLabel(JMF_MAIN_MATERIAL__c) mainMaterialLabel, CRE_JMF_STANDARD_SIZE_RANGE__c, COM_POLISHING_DESC__c, WBR_Self_Interchangeable__c, COM_PRODUCT_LAUNCH_DATE__c, CRE_Limited_Edition__c  FROM Product2\"\n        },\n        {\n            \"id\": \"stoneQuery\",\n            \"name\": \"Stones\",\n            \"query\": \"SELECT Quantity__c, Id, STO_COLOR__c, Product__c, STO_CUT__c, TOTAL_CARATS__c, STO_TYPE__c, toLabel(STO_TYPE__c) typeLabel, TOTAL_CARATS_UNIT__c  FROM Stone__c\"\n        }\n    ],\n    \"picklists\": [\n        {\n            \"values\": \"86400;172800;604800\",\n            \"objectName\": \"Event\",\n            \"labels\": \"1 day before;2 days before;1 week before\",\n            \"id\": \"1566732695526Reminder__cEvent\",\n            \"fieldName\": \"Reminder__c\",\n            \"controllingFieldValue\": null,\n            \"ControllingFieldName\": null\n        }\n    ],\n    \"mappings\": [\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Is_Contactable__pc\",\n            \"id\": \"IsContactable\",\n            \"wrapperFieldName\": \"isContactable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_CLEANING_DESC__c\",\n            \"id\": \"ProductCleaningDesc\",\n            \"wrapperFieldName\": \"cleaningDesc\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Quantity__c\",\n            \"id\": \"StoneCaratQuantity\",\n            \"wrapperFieldName\": \"quantity\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Last_Sale_Date__pc\",\n            \"id\": \"ClientLastSaleDate\",\n            \"wrapperFieldName\": \"lastSaleDate\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Is_Contactable__pc\",\n            \"id\": \"CFIsContactable\",\n            \"wrapperFieldName\": \"isContactable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WBR_Interchangeable__c\",\n            \"id\": \"ProductInterchangeable\",\n            \"wrapperFieldName\": \"interchangeable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMF_Size__c\",\n            \"id\": \"ProductWMFSize\",\n            \"wrapperFieldName\": \"wmfSize\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_Marketing_description__c\",\n            \"id\": \"ProductMarketingDesc\",\n            \"wrapperFieldName\": \"marketingDescription\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"LastName\",\n            \"id\": \"ClientLastName\",\n            \"wrapperFieldName\": \"lastName\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Id\",\n            \"id\": \"ProductId\",\n            \"wrapperFieldName\": \"id\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"PersonMobilePhone\",\n            \"id\": \"MobilePhone\",\n            \"wrapperFieldName\": \"mobile\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Id\",\n            \"id\": \"StoneId\",\n            \"wrapperFieldName\": \"id\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_ENGRAVING_DESC__c\",\n            \"id\": \"ProductEngravingDesc\",\n            \"wrapperFieldName\": \"engravingDesc\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_Collection_Product_Line__c\",\n            \"id\": \"ProductCollectionName\",\n            \"wrapperFieldName\": \"collectionId\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"FirstName\",\n            \"id\": \"ClientFirstName\",\n            \"wrapperFieldName\": \"firstName\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_THEMATIC__c\",\n            \"id\": \"ProductThematic\",\n            \"wrapperFieldName\": \"thematic\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_TOTAL_CARATS_BY_GEM__c\",\n            \"id\": \"ProductTotalCaratsByGem\",\n            \"wrapperFieldName\": \"totalCaratsByGem\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"STO_COLOR__c\",\n            \"id\": \"StoneColor\",\n            \"wrapperFieldName\": \"color\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Product_Family__c\",\n            \"id\": \"ProductFamilyId1\",\n            \"wrapperFieldName\": \"productFamilyId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMO_Power_Reserve__c\",\n            \"id\": \"ProductPowerReserve\",\n            \"wrapperFieldName\": \"powerReserve\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMO_Function_Type__c\",\n            \"id\": \"ProductFunctionType\",\n            \"wrapperFieldName\": \"functionType\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Size_Adjustment_Value__c\",\n            \"id\": \"ProductSizeAdjustmentValue\",\n            \"wrapperFieldName\": \"sizeAdjustmentValue\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Birthday_Month__pc\",\n            \"id\": \"ClientBirthdayMonth\",\n            \"wrapperFieldName\": \"birthdayMonth\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Segment__pc\",\n            \"id\": \"ClientIdSegment\",\n            \"wrapperFieldName\": \"segment\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Product__c\",\n            \"id\": \"StoneProductId\",\n            \"wrapperFieldName\": \"productId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMF_Water_Resistant__c\",\n            \"id\": \"ProductWaterResistant\",\n            \"wrapperFieldName\": \"waterResistant\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_SPECIFIC_HIGHLIGHTS__c\",\n            \"id\": \"ProductSpecificHighlights\",\n            \"wrapperFieldName\": \"specificHighlight\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_SAP_Reference__c\",\n            \"id\": \"ProductSAPReference\",\n            \"wrapperFieldName\": \"sapReference\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Name\",\n            \"id\": \"ProductName\",\n            \"wrapperFieldName\": \"name\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"PIM_CRE_JMF_SIZE_INT__c\",\n            \"id\": \"ProductJmfSizeInt\",\n            \"wrapperFieldName\": \"sizeInt\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Product_Family__c\",\n            \"id\": \"ProductFamily\",\n            \"wrapperFieldName\": \"familyId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_SUB_COLLECTION__c\",\n            \"id\": \"ProductSubCollectionText\",\n            \"wrapperFieldName\": \"subCollection\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"PersonEmail\",\n            \"id\": \"Email\",\n            \"wrapperFieldName\": \"email\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"OwnerId\",\n            \"id\": \"ClientsOwnerId\",\n            \"wrapperFieldName\": \"ownerId\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"STO_CUT__c\",\n            \"id\": \"StoneCut\",\n            \"wrapperFieldName\": \"cut\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_REPLACEMENT_STONE_DESC__c\",\n            \"id\": \"ProductReplacementStoneDesc\",\n            \"wrapperFieldName\": \"replacmentStoneDesc\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": true,\n            \"sfFieldName\": \"Turnover__pc\",\n            \"id\": \"ClientTurnover1\",\n            \"wrapperFieldName\": \"turnover\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"TOTAL_CARATS__c\",\n            \"id\": \"StoneCarats\",\n            \"wrapperFieldName\": \"carats\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Id\",\n            \"id\": \"ClientIdDetail\",\n            \"wrapperFieldName\": \"id\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_size_adjustment__c\",\n            \"id\": \"ProductSizeAdjustment\",\n            \"wrapperFieldName\": \"sizeAdjustment\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_PRODUCT_TYPE__c\",\n            \"id\": \"ProductType\",\n            \"wrapperFieldName\": \"productTypeId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"JMF_MAIN_MATERIAL__c\",\n            \"id\": \"ProductMainMaterial\",\n            \"wrapperFieldName\": \"mainMaterial\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"STO_TYPE__c\",\n            \"id\": \"StoneType\",\n            \"wrapperFieldName\": \"type\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_JMF_STANDARD_SIZE_RANGE__c\",\n            \"id\": \"ProductStandardSizeRange\",\n            \"wrapperFieldName\": \"standardSizeRange\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"TOTAL_CARATS_UNIT__c\",\n            \"id\": \"StoneCaratUnits\",\n            \"wrapperFieldName\": \"caratsUnit\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Birthday_Year__pc\",\n            \"id\": \"ClientBirthdayYear\",\n            \"wrapperFieldName\": \"birthdayYear\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"First_Sale_Date__pc\",\n            \"id\": \"ClientFirstSaleDate\",\n            \"wrapperFieldName\": \"firstSaleDate\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_POLISHING_DESC__c\",\n            \"id\": \"ProductPolishingDesc\",\n            \"wrapperFieldName\": \"polishingDesc\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"OwnerName\",\n            \"id\": \"ClientsOwnerName\",\n            \"wrapperFieldName\": \"ownerName\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WBR_Self_Interchangeable__c\",\n            \"id\": \"ProductSelfInterchangeable\",\n            \"wrapperFieldName\": \"selfInterchangeable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_PRODUCT_LAUNCH_DATE__c\",\n            \"id\": \"ProductLaunchDate\",\n            \"wrapperFieldName\": \"launchDate\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Birthday_Day__pc\",\n            \"id\": \"ClientBirthdayDay\",\n            \"wrapperFieldName\": \"birthdayDay\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_Limited_Edition__c\",\n            \"id\": \"ProductLimitedEdition\",\n            \"wrapperFieldName\": \"limitedEdition\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"LastContactedDate__c\",\n            \"id\": \"ClientLastContactedDate\",\n            \"wrapperFieldName\": \"lastContactedDate\"\n        }\n    ],\n    \"emailTemplatesFields\": [\n        {\n            \"strToReplace\": \"{!User.Phone}\",\n            \"field\": \"phone\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5kQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Sales Advisor Name}\",\n            \"field\": \"ownerName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5iQAA\"\n        },\n        {\n            \"strToReplace\": \"{SA Name}\",\n            \"field\": \"name\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5mQAA\"\n        },\n        {\n            \"strToReplace\": \"{!User.Mobile}\",\n            \"field\": \"mobile\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5jQAA\"\n        },\n        {\n            \"strToReplace\": \"{Mr/Mrs}\",\n            \"field\": \"salutationLabel\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5dQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Contact.FirstName}\",\n            \"field\": \"firstName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5eQAA\"\n        },\n        {\n            \"strToReplace\": \"{Customer Last Name}\",\n            \"field\": \"lastName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5fQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Account.StoreReferenceDeclared__pc}\",\n            \"field\": \"storeName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5gQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Contact.Birthdate}\",\n            \"field\": \"birthdayDate\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5hQAA\"\n        },\n        {\n            \"strToReplace\": \"{Sales Advisor Name}\",\n            \"field\": \"name\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000000IseQAE\"\n        },\n        {\n            \"strToReplace\": \"{!User. Base_Store_Code__c}\",\n            \"field\": \"storeName\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5lQAA\"\n        }\n    ]\n}"
             }
-          ],
-          "cookie": [],
-          "responseTime": null,
-          "body": "{\n    \"userInfos\": {\n        \"imagePath\": \"https://mediastorage.richemont.com/damdatastore/QuA/vca/\",\n        \"storeName\": \"Houston - River Oaks District\",\n        \"priceIncludeTax\": true,\n        \"storeId\": \"a0R4E00000Du6CzUAJ\",\n        \"photoUrl\": \"https://vancleefarpels--retail--c.documentforce.com/profilephoto/7294E000000O5r8/F\",\n        \"id\": \"0052p000008MZmNAAW\",\n        \"currency\": \"EUR\",\n        \"lang\": \"en_US\",\n        \"email\": \"dev@balink.net\",\n        \"lastName\": \"Dev\",\n        \"storeCode\": \"3088\",\n        \"firstName\": \"Balink\",\n        \"name\": \"Balink Dev\"\n    },\n    \"SAs\": [],\n    \"queries\": [\n        {\n            \"id\": \"clientQuery\",\n            \"name\": \"Clients\",\n            \"query\": \"SELECT Is_Contactable__pc, toLabel(Is_Contactable__pc) isContactableLabel, Last_Sale_Date__pc, LastName, PersonMobilePhone, FirstName, Birthday_Month__pc, Segment__pc, PersonEmail, OwnerId, Turnover__pc, convertCurrency(Turnover__pc) Turnover__pcConverted, Id, Birthday_Year__pc, First_Sale_Date__pc, Birthday_Day__pc, LastContactedDate__c  FROM Account WHERE Id != ''  AND Main_Store__pr.Store_Code__c = '3088'\"\n        },\n        {\n            \"id\": \"productQuery\",\n            \"name\": \"Products\",\n            \"query\": \"SELECT COM_CLEANING_DESC__c, WBR_Interchangeable__c, WMF_Size__c, COM_Marketing_description__c, Id, COM_ENGRAVING_DESC__c, CRE_Collection_Product_Line__c, COM_THEMATIC__c, toLabel(COM_THEMATIC__c) thematicLabel, COM_TOTAL_CARATS_BY_GEM__c, Product_Family__c, WMO_Power_Reserve__c, WMO_Function_Type__c, Size_Adjustment_Value__c, WMF_Water_Resistant__c, COM_SPECIFIC_HIGHLIGHTS__c, CRE_SAP_Reference__c, Name, PIM_CRE_JMF_SIZE_INT__c, COM_SUB_COLLECTION__c, toLabel(COM_SUB_COLLECTION__c) subCollectionLabel, COM_REPLACEMENT_STONE_DESC__c, COM_size_adjustment__c, toLabel(COM_size_adjustment__c) sizeAdjustmentLabel, CRE_PRODUCT_TYPE__c, JMF_MAIN_MATERIAL__c, toLabel(JMF_MAIN_MATERIAL__c) mainMaterialLabel, CRE_JMF_STANDARD_SIZE_RANGE__c, COM_POLISHING_DESC__c, WBR_Self_Interchangeable__c, COM_PRODUCT_LAUNCH_DATE__c, CRE_Limited_Edition__c  FROM Product2\"\n        },\n        {\n            \"id\": \"stoneQuery\",\n            \"name\": \"Stones\",\n            \"query\": \"SELECT Quantity__c, Id, STO_COLOR__c, Product__c, STO_CUT__c, TOTAL_CARATS__c, STO_TYPE__c, toLabel(STO_TYPE__c) typeLabel, TOTAL_CARATS_UNIT__c  FROM Stone__c\"\n        }\n    ],\n    \"picklists\": [\n        {\n            \"values\": \"86400;172800;604800\",\n            \"objectName\": \"Event\",\n            \"labels\": \"1 day before;2 days before;1 week before\",\n            \"id\": \"1566732695526Reminder__cEvent\",\n            \"fieldName\": \"Reminder__c\",\n            \"controllingFieldValue\": null,\n            \"ControllingFieldName\": null\n        }\n    ],\n    \"mappings\": [\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Is_Contactable__pc\",\n            \"id\": \"IsContactable\",\n            \"wrapperFieldName\": \"isContactable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_CLEANING_DESC__c\",\n            \"id\": \"ProductCleaningDesc\",\n            \"wrapperFieldName\": \"cleaningDesc\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Quantity__c\",\n            \"id\": \"StoneCaratQuantity\",\n            \"wrapperFieldName\": \"quantity\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Last_Sale_Date__pc\",\n            \"id\": \"ClientLastSaleDate\",\n            \"wrapperFieldName\": \"lastSaleDate\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Is_Contactable__pc\",\n            \"id\": \"CFIsContactable\",\n            \"wrapperFieldName\": \"isContactable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WBR_Interchangeable__c\",\n            \"id\": \"ProductInterchangeable\",\n            \"wrapperFieldName\": \"interchangeable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMF_Size__c\",\n            \"id\": \"ProductWMFSize\",\n            \"wrapperFieldName\": \"wmfSize\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_Marketing_description__c\",\n            \"id\": \"ProductMarketingDesc\",\n            \"wrapperFieldName\": \"marketingDescription\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"LastName\",\n            \"id\": \"ClientLastName\",\n            \"wrapperFieldName\": \"lastName\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Id\",\n            \"id\": \"ProductId\",\n            \"wrapperFieldName\": \"id\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"PersonMobilePhone\",\n            \"id\": \"MobilePhone\",\n            \"wrapperFieldName\": \"mobile\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Id\",\n            \"id\": \"StoneId\",\n            \"wrapperFieldName\": \"id\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_ENGRAVING_DESC__c\",\n            \"id\": \"ProductEngravingDesc\",\n            \"wrapperFieldName\": \"engravingDesc\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_Collection_Product_Line__c\",\n            \"id\": \"ProductCollectionName\",\n            \"wrapperFieldName\": \"collectionId\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"FirstName\",\n            \"id\": \"ClientFirstName\",\n            \"wrapperFieldName\": \"firstName\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_THEMATIC__c\",\n            \"id\": \"ProductThematic\",\n            \"wrapperFieldName\": \"thematic\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_TOTAL_CARATS_BY_GEM__c\",\n            \"id\": \"ProductTotalCaratsByGem\",\n            \"wrapperFieldName\": \"totalCaratsByGem\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"STO_COLOR__c\",\n            \"id\": \"StoneColor\",\n            \"wrapperFieldName\": \"color\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Product_Family__c\",\n            \"id\": \"ProductFamilyId1\",\n            \"wrapperFieldName\": \"productFamilyId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMO_Power_Reserve__c\",\n            \"id\": \"ProductPowerReserve\",\n            \"wrapperFieldName\": \"powerReserve\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMO_Function_Type__c\",\n            \"id\": \"ProductFunctionType\",\n            \"wrapperFieldName\": \"functionType\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Size_Adjustment_Value__c\",\n            \"id\": \"ProductSizeAdjustmentValue\",\n            \"wrapperFieldName\": \"sizeAdjustmentValue\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Birthday_Month__pc\",\n            \"id\": \"ClientBirthdayMonth\",\n            \"wrapperFieldName\": \"birthdayMonth\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Segment__pc\",\n            \"id\": \"ClientIdSegment\",\n            \"wrapperFieldName\": \"segment\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Product__c\",\n            \"id\": \"StoneProductId\",\n            \"wrapperFieldName\": \"productId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WMF_Water_Resistant__c\",\n            \"id\": \"ProductWaterResistant\",\n            \"wrapperFieldName\": \"waterResistant\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_SPECIFIC_HIGHLIGHTS__c\",\n            \"id\": \"ProductSpecificHighlights\",\n            \"wrapperFieldName\": \"specificHighlight\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_SAP_Reference__c\",\n            \"id\": \"ProductSAPReference\",\n            \"wrapperFieldName\": \"sapReference\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Name\",\n            \"id\": \"ProductName\",\n            \"wrapperFieldName\": \"name\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"PIM_CRE_JMF_SIZE_INT__c\",\n            \"id\": \"ProductJmfSizeInt\",\n            \"wrapperFieldName\": \"sizeInt\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Product_Family__c\",\n            \"id\": \"ProductFamily\",\n            \"wrapperFieldName\": \"familyId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_SUB_COLLECTION__c\",\n            \"id\": \"ProductSubCollectionText\",\n            \"wrapperFieldName\": \"subCollection\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"PersonEmail\",\n            \"id\": \"Email\",\n            \"wrapperFieldName\": \"email\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"OwnerId\",\n            \"id\": \"ClientsOwnerId\",\n            \"wrapperFieldName\": \"ownerId\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"STO_CUT__c\",\n            \"id\": \"StoneCut\",\n            \"wrapperFieldName\": \"cut\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_REPLACEMENT_STONE_DESC__c\",\n            \"id\": \"ProductReplacementStoneDesc\",\n            \"wrapperFieldName\": \"replacmentStoneDesc\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": true,\n            \"sfFieldName\": \"Turnover__pc\",\n            \"id\": \"ClientTurnover1\",\n            \"wrapperFieldName\": \"turnover\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"TOTAL_CARATS__c\",\n            \"id\": \"StoneCarats\",\n            \"wrapperFieldName\": \"carats\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Id\",\n            \"id\": \"ClientIdDetail\",\n            \"wrapperFieldName\": \"id\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_size_adjustment__c\",\n            \"id\": \"ProductSizeAdjustment\",\n            \"wrapperFieldName\": \"sizeAdjustment\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_PRODUCT_TYPE__c\",\n            \"id\": \"ProductType\",\n            \"wrapperFieldName\": \"productTypeId\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"JMF_MAIN_MATERIAL__c\",\n            \"id\": \"ProductMainMaterial\",\n            \"wrapperFieldName\": \"mainMaterial\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"STO_TYPE__c\",\n            \"id\": \"StoneType\",\n            \"wrapperFieldName\": \"type\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_JMF_STANDARD_SIZE_RANGE__c\",\n            \"id\": \"ProductStandardSizeRange\",\n            \"wrapperFieldName\": \"standardSizeRange\"\n        },\n        {\n            \"objectName\": \"Stone__c\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"TOTAL_CARATS_UNIT__c\",\n            \"id\": \"StoneCaratUnits\",\n            \"wrapperFieldName\": \"caratsUnit\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Birthday_Year__pc\",\n            \"id\": \"ClientBirthdayYear\",\n            \"wrapperFieldName\": \"birthdayYear\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"First_Sale_Date__pc\",\n            \"id\": \"ClientFirstSaleDate\",\n            \"wrapperFieldName\": \"firstSaleDate\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_POLISHING_DESC__c\",\n            \"id\": \"ProductPolishingDesc\",\n            \"wrapperFieldName\": \"polishingDesc\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"OwnerName\",\n            \"id\": \"ClientsOwnerName\",\n            \"wrapperFieldName\": \"ownerName\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"WBR_Self_Interchangeable__c\",\n            \"id\": \"ProductSelfInterchangeable\",\n            \"wrapperFieldName\": \"selfInterchangeable\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"COM_PRODUCT_LAUNCH_DATE__c\",\n            \"id\": \"ProductLaunchDate\",\n            \"wrapperFieldName\": \"launchDate\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"Birthday_Day__pc\",\n            \"id\": \"ClientBirthdayDay\",\n            \"wrapperFieldName\": \"birthdayDay\"\n        },\n        {\n            \"objectName\": \"Product2\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"CRE_Limited_Edition__c\",\n            \"id\": \"ProductLimitedEdition\",\n            \"wrapperFieldName\": \"limitedEdition\"\n        },\n        {\n            \"objectName\": \"Account\",\n            \"isCurrency\": false,\n            \"sfFieldName\": \"LastContactedDate__c\",\n            \"id\": \"ClientLastContactedDate\",\n            \"wrapperFieldName\": \"lastContactedDate\"\n        }\n    ],\n    \"emailTemplatesFields\": [\n        {\n            \"strToReplace\": \"{!User.Phone}\",\n            \"field\": \"phone\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5kQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Sales Advisor Name}\",\n            \"field\": \"ownerName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5iQAA\"\n        },\n        {\n            \"strToReplace\": \"{SA Name}\",\n            \"field\": \"name\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5mQAA\"\n        },\n        {\n            \"strToReplace\": \"{!User.Mobile}\",\n            \"field\": \"mobile\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5jQAA\"\n        },\n        {\n            \"strToReplace\": \"{Mr/Mrs}\",\n            \"field\": \"salutationLabel\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5dQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Contact.FirstName}\",\n            \"field\": \"firstName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5eQAA\"\n        },\n        {\n            \"strToReplace\": \"{Customer Last Name}\",\n            \"field\": \"lastName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5fQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Account.StoreReferenceDeclared__pc}\",\n            \"field\": \"storeName\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5gQAA\"\n        },\n        {\n            \"strToReplace\": \"{!Contact.Birthdate}\",\n            \"field\": \"birthdayDate\",\n            \"object\": \"Client\",\n            \"id\": \"m044E0000008k5hQAA\"\n        },\n        {\n            \"strToReplace\": \"{Sales Advisor Name}\",\n            \"field\": \"name\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000000IseQAE\"\n        },\n        {\n            \"strToReplace\": \"{!User. Base_Store_Code__c}\",\n            \"field\": \"storeName\",\n            \"object\": \"UserDefault\",\n            \"id\": \"m044E0000008k5lQAA\"\n        }\n    ]\n}"
+          ]
         }
-      ]
+      ],
+      "_postman_id": "83d141f7-8d6d-454b-8ae4-79744c37750d"
     },
     {
       "name": "Get Email Template",
